@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>detail_page</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <input type="checkbox" id="chk_quick">
+
+  
+  <div class="quick_menu">
+    
+    <div class="quick_sub_menu">
+      <div class="home">
+        <a href="#">
+         <span>
+          <img src="./images/quick_home_menu.png" alt="home_menu">
+         </span>
+         <span>
+          <img src="./images/quick_home_menu_hover.png" alt="home_hover_img">
+         </span>
+       </a>
+      </div>
+  
+      <div class="chat">
+       <a href="#">
+        <span>💬</span>
+        <span>🗯</span>  
+       </a>
+      </div>
+  
+      <div class="time">
+       <a href="#">
+        <span>🕘</span>
+        <span>🕛</span>
+       </a>
+      </div>
+  
+    </div>
+  
+      <div class="see_more">
+         <label for="chk_quick">
+          <span>+</span>
+          <span>-</span>
+        </label>
+       </div>
+  
+      <div class="top_menu">
+       <a href="#">
+        <span>▲</span>
+        <span>▲</span>
+       </a>
+      </div>
+  
+      <div class="bottom_menu">
+       <a href="#footer">
+        <span>▼</span>
+        <span>▼</span>
+       </a>
+      </div>
+    
+    </div>
+
+
+  <input type="checkbox" id="chk_ham_menu">
+
+ 
+  <header class="header">
+
+    <div class="wrap">
+      <div class="gnb_box">
+       <nav class="gnb_left">
+        <ul>
+         <li><a href="#">공지사항</a></li>
+         <li><a href="#">고객센터</a></li>
+        </ul>
+       </nav>
+  
+       <nav class="gnb_right">
+  
+        <ul>
+  
+         <li class="search">
+          <div>
+           <input type="search">
+          </div>
+          <a href="#"> 
+            <span>
+              <img src="./images/돋보기_아이콘.gif" alt="search_menu">
+            </span>
+            <span>
+              <img src="./images/돋보기_hover.gif" alt="search_menu_hover">
+            </span>
+           </a>
+  
+           <ul class="hit_search">
+            <li>
+             <h5 class="top">top1</h5>
+             <p>가디건</p>
+            </li>
+            <li>
+             <h5 class="top">top2</h5>
+             <p>니트</p>
+            </li>
+            <li>
+             <h5 class="top">top3</h5>
+             <p>레더백</p>
+            </li>
+            <li>
+             <h5 class="top">top4</h5>
+             <p>원피스</p>
+            </li>
+            <li>
+             <h5 class="top">top5</h5>
+             <p>셋업</p>
+            </li>
+    
+           </ul>
+  
+         </li>
+  
+       
+  
+         <li class="cart">
+          <a href="#">
+           <span>
+            <img src="./images/cart_30_30.gif" alt="cart_menu">
+           </span>
+           <span>
+            <img src="./images/cart_hover.gif" alt="cart_menu_hover">
+          </a>
+         </li>
+  
+         <li class="login">
+          <a href="#">
+           <span>
+            <img src="./images/log-in_menu.gif" alt="login_menu">
+           </span>
+           <span>
+            <img src="./images/login_menu_hover.gif" alt="login_hover">
+           </span>
+          </a>
+         </li>
+  
+         <li class="heart">
+          <a href="#">
+           <span>
+            <img src="./images/heart_30_30.gif" alt="heart_menu">
+           </span>
+           <span>
+            <img src="./images/heart_hover.gif" alt="heart_menu_hover">
+           </span>
+          </a>
+         </li>
+  
+        </ul>
+  
+       </nav>
+  
+      </div>
+
+
+ <hr>
+
+ <div class="logo">
+  <a href="../index.html">
+   <span>
+     <img src="./images/로고-최종.png" alt="logo_img">
+   </span>
+   <span>
+     <img src="./images/logo_최종_hover.gif" alt="logo_hover_img">
+   </span>
+  </a>
+</div>
+
+  </div>
+
+    <nav class="lnb_box">
+
+      <ul class="lnb">
+
+        <li class="ham_menu">
+         <label for="chk_ham_menu">
+          <span>
+            <img src="./images/더보기_main_menu_01.gif" alt="ham_menu">
+          </span>
+          <span class="close">
+            <img src="./images/더보기_menu_close.gif" alt="ham_menu_hover">
+          </span>
+          <span>
+            <img src="./images/더보기_menu.gif" alt="ham_menu_hover">
+        </span>
+         </label>
+        </li>
+
+        <li>
+          <a href="#" class="new">
+            <span>NEW</span>
+            <span>신상</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>BEST</span>
+            <span>베스트</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>free</span>
+            <span>무료배송</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>CODY SET</span>
+            <span>코디 세트</span>
+          </a>
+        </li>
+        <li class="red">
+          <a href="../sub_page/index.html">
+            <span>OUTER</span>
+            <span>아우터</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>TOP</span>
+            <span>상의</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>BOTTOM</span>
+            <span>하의</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>DRESS</span>
+            <span>드레스</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>ACC.</span>
+            <span>악세서리</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>ATC.</span>
+            <span>기타</span>
+          </a>
+        </li>
+      </ul>
+    
+   
+
+ <div class="menu_box">
+
+   <nav class="sub_menu">
+
+    <div class="member_box">
+      <ul class="member">
+        <li><a href="#!">로그인</a></li>
+        <li><a href="#!">회원가입</a></li>
+        <li><a href="#!">장바구니</a></li>
+        <li><a href="#!">주문조회</a></li>
+      </ul>
+
+      <ul class="company_number">
+        <li>(주)MINGland</li>
+        <li>농협 302-1648-1982-61</li>
+      </ul>
+    </div>
+
+    <ul class="sub">
+      <li><a href="#">NEW</a></li>  
+      <ul>
+        <li><a href="#">겨울 시즌 신상</a></li>
+        <li><a href="#">봄 시즌 신상</a></li>
+        <li><a href="#">오늘의 신상 10%</a></li>
+      </ul>
+    </ul>
+
+    <ul class="sub">
+      <li><a href="#">CODY SET</a></li>
+       <ul>
+        <li><a href="#">#봄</a></li>
+        <li><a href="#">#여름</a></li>
+        <li><a href="#">#가을</a></li>
+        <li><a href="#">#겨울</a></li>
+        <li><a href="#">데이트룩</a></li>
+        <li><a href="#">#커플룩</a></li>
+       </ul>
+    </ul> 
+
+    <ul class="sub">
+      <li class="red"><a href="./sub_page/index.html">OUTER</a></li>
+       <ul>
+        <li><a href="#">#자켓</a></li>
+        <li><a href="#">#코트</a></li>
+        <li><a href="#">#집업</a></li>
+        <li><a href="#">#가디건</a></li>
+       </ul>
+    </ul>
+
+    <ul class="sub">
+      <li><a href="#">TOP</a></li>
+       <ul>
+        <li><a href="#">#나시</a></li>
+        <li><a href="#">#니트</a></li>
+        <li><a href="#">#맨투맨</a></li>
+        <li><a href="#">#반팔</a></li>
+       </ul>
+    </ul>
+
+    <ul class="sub">
+      <li><a href="#">BOTTOM</a></li>
+       <ul>
+        <li><a href="#">#반바지</a></li>
+        <li><a href="#">#스커트</a></li>
+        <li><a href="#">#데님</a></li>
+        <li><a href="#">#슬랙스</a></li>
+        <li><a href="#">#레깅스</a></li>
+       </ul>
+    </ul>
+
+    <ul class="sub">
+      <li><a href="#">DRESS</a></li>
+       <ul>
+        <li><a href="#">#미니</a></li>
+        <li><a href="#">#롱</a></li>
+        <li><a href="#">#투피스</a></li>
+       </ul>
+    </ul>
+
+    <ul class="sub">
+      <li><a href="#">ACC.</a></li>
+       <ul>
+        <li><a href="#">#가방</a></li>
+        <li><a href="#">#신발</a></li>
+        <li><a href="#">#모자</a></li>
+       </ul>
+    </ul>
+
+    <ul class="sub">
+      <li><a href="#">ATC.</a></li>
+       <ul>
+        <li><a href="#">#잠옷</a></li>
+        <li><a href="#">#수영복</a></li>
+        <li><a href="#">#트레이닝</a></li>
+       </ul>
+    </ul>
+
+
+   </nav>
+  </div>
+
+</nav>
+
+</header>
+
+  <!--header-->
+
+<input type="radio" id="chk_size_s" name="size">
+<input type="radio" id="chk_size_m" name="size">
+
+<input type="checkbox" id="chk_explain">
+
+<div class="wrap">
+  <section class="detail_main_box">
+
+   <div class="detail_main">
+    <div class="main_img">
+      <img src="./images/img_01.jpg" alt="main_img">
+    </div>
+    <h5><red>*</red>BEST REVIEW<red>*</red></h5>
+    <div class="best_review">
+      <div class="best_review_01">
+        <img src="./images/best_review_img_01.jpg" alt="best_review_img_01">
+        <p>박**님의 review
+          <br>요고 샀는데<br>너무 잘입고<br>다니고있어요!<br>번창하세요!
+        </p>
+      </div>
+      <div class="best_review_02">
+        <img src="./images/best_review_img_02.jpg" alt="best_review_img_02">
+        <p>김**님의 review
+          <br>데님 자켓 너무 이쁜데요!!!<br>연청도 나왔으면 좋겠어요!!
+        </p>
+      </div>
+      <div class="best_review_03">
+        <img src="./images/best_review_img_03.jpg" alt="best_review_img_03">
+        <p>이**님의 review
+          셋업으로 사서 입었는데<br>넘 이쁜거 있죠!!!!</p>
+      </div>
+      <div class="best_review_04">
+        <img src="./images/best_review_img_04.jpg" alt="best_review_img_04">
+        <p>고**님의 review
+          <br>진짜 인생템!<br> 편하고 이뿌고 다해욤~~</p>
+      </div>
+    </div>
+
+    <div class="event_banner">
+      <div class="event_banner_01">
+        <img src="./images/event banner.jpg" alt="event_banner_img_01">
+      </div>
+      <div class="event_banner_02">
+        <img src="./images/event banner01.jpg" alt="event_banner_img_02">
+      </div>
+
+    </div>
+   </div>
+
+    <div class="purchase_window">
+      <div class="outer_info">
+        <h3>미닝 생지 카라 데님 자켓</h3>
+       <div class="price">
+
+        <div class="price_01">
+          <h5>판매가</h5>
+          <h5><red>*</red>할인 판매가<red>*</red></h5>
+        </div>
+        <div class="price_02">
+          <span><p>51,000</p></span>
+          <span><p><red>-10%</red></p></span>
+          <span><p>45,900</p></span>
+        </div>
+
+       </div>
+       
+      </div>
+
+      <div class="color_option">
+        <h5>컬러 선택</h5>
+        <select name="color" id="color">
+         <option value="color">color</option>
+         <option value="color">one color</option>
+        </select>
+      </div>
+
+      <div class="size_option">
+        <h5>사이즈 선택</h5>
+        <label for="chk_size_s">
+         <div class="size_img_s">
+          <span>
+           <img src="./images/size_s.png" alt="size_s_img">
+          </span>
+          <span>
+            <img src="./images/size_s_chk.png" alt="size_s_chk_img">
+          </span>
+         </div>
+        </label>
+        <label for="chk_size_m">
+         <div class="size_img_m">
+          <span>
+           <img src="./images/size_m.png" alt="size_m_img">
+          </span>
+          <span>
+            <img src="./images/size_m_chk.png" alt="size_m_chk_img">
+          </span>
+         </div>
+        </label>
+      </div>
+
+      <div class="img_explain_box">
+        <span>
+         <h5>상세설명</h5>
+        </span>
+        <label for="chk_explain">
+         <span>
+           ▼
+         </span>
+        </label>
+        <br>
+        <div class="img_explain">
+          
+           <p class="center">
+            <red>*</red>
+            캐주얼한 무드 데님자켓
+            <red>*</red>
+           </p>
+            
+       
+           <p>
+            신축성있는 코튼 소재의 데님자켓으로
+            <br> 
+            카라 디자인과 화이트 스티치로 클래식한
+            무드를 담은 자켓인데요~
+            <br>
+            <br>
+            적당히 슬림한 핏감이 세련되면서 
+            캐주얼한 아웃핏을 연출해드리며 
+            바스트 라인의 포켓으로 밋밋함을 
+            덜어주었답니다.
+            <br>
+            양 사이드 포켓으로 실용성까지 꼼꼼히 채웠구요~
+            논페이드 소재로 물빠짐이 걱정없는 자켓이예요:)
+            <br>
+            <br>
+            세트 느낌의 팬츠와 매치하여 셋업 또는
+            다양한 하의와 스타일링할 수 있는
+            딥한 생지진 디자인으로 어디든 매치하기 좋아요~!
+            <br>
+            <br>
+            #포인트룩_추천 #데이트룩추천 
+          </p>
+        
+        </div>
+      </div>
+
+      <div class="size_guide">
+        <p>실측 사이즈 안내</p>
+      </div>
+
+      <div class="total_price">
+        <h5>총 상품 금액</h5>
+        <div class="plus_amount">
+         <div class="plus">
+          <img src="./images/plus.png" alt="plus_img">
+         </div>
+         <input type="number" value="1">
+         <p>개</p>
+        </div>
+
+        <div class="button_box">
+         <input type="button" value="CART" class="button">
+         <input type="button" value="BUY" class="button">
+        </div>
+
+        <div class="way_to_wash">
+          <p>*소재 및 세탁방법*</p>
+        </div>
+       
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<div class="wrap">
+
+       <section class="detail_info" id="info">
+
+        <ul class="info_type" >
+          <li class="info"><p><a href="#info">상세정보</a></p></li>
+          <li><p><a href="#model">모델인포</a></p></li>
+          <li><p><a href="#buy">구매안내</a></p></li>
+          <li><p><a href="#product">관련상품</a></p></li>
+          <li><p><a href="#review">상품후기(2)</a></p></li>
+          <li><p><a href="#qna">상품문의</a></p></li>
+          </ul>
+  
+        <h4>상세정보</h4>
+        
+        <div class="sub_img">
+        <div class="sub_img_img_01 img">
+          <img src="./images/bg_img_01.jpg" alt="sub_img_01">
+        </div>
+        <div class="sub_img_img_02 img">
+          <img src="./images/bg_img_02.jpg" alt="sub_img_02">
+        </div>
+        <div class="sub_img_img_03 img">
+          <img src="./images/bg_img_03.jpg" alt="sub_img_03">
+        </div>
+        <div class="sub_img_img_04 img">
+          <img src="./images/bg_img_04.jpg" alt="sub_img_04">
+        </div>
+        <div class="sub_img_img_05 img">
+          <img src="./images/bg_img_05.jpg" alt="sub_img_05">
+        </div>
+        </div>
+        <div class="sub_img_06">
+          <div class="sub_img_img_06 img">
+            <img src="./images/bg_img_06.jpg" alt="sub_img_06">
+          </div>
+        </div>
+        <h4>진청 : Dark blue</h4>
+
+        <div class="detail_size_img">
+          <img src="./images/size.jpeg" alt="size_img">
+        </div>
+
+        <div class="size_info">
+          <h3>SIZE INFO</h3>
+
+           <table>
+
+            <tr>
+              <th>사이즈</th>
+              <th>총길이</th>
+              <th>어깨</th>
+              <th>가슴</th>
+              <th>허리</th>
+              <th>밑단</th>
+              <th>소매</th>
+              <th>암홀</th>
+            </tr>
+           
+
+            <tr>
+              <td>S</td>
+              <td>56</td>
+              <td>37</td>
+              <td>41</td>
+              <td>41</td>
+              <td>42</td>
+              <td>56</td>
+              <td>19</td>
+            </tr>
+
+            <tr>
+              <td>M</td>
+              <td>57</td>
+              <td>38</td>
+              <td>42</td>
+              <td>43</td>
+              <td>43</td>
+              <td>57</td>
+              <td>20</td>
+            </tr>
+          </table>
+
+          <div class="size_explain">
+           <p>- 단위 cm</p>
+           <p>- 사이즈는 측정하는 위치에 따라 1-3cm 정도 오차가 생길 수 있습니다.</p>
+           <p>- 마네킹 바디 사이즈는 마른 55size입니다.</p>
+          </div>
+        </div>
+
+        <div class="color_view_box">
+          <h3>COLOR VIEW</h3>
+          <div class="color_view">
+          <div class="color_view_img">
+           <img src="./images/color_view.jpeg" alt="color_view_img">
+          </div>
+          <ul class="detali_description">
+            <li>COLOR : 진청</li>
+            <li>SIZE : S, M</li>
+            <li>FABRIC : 코튼 98% / 스판 2%</li>
+            <li>LAUNDRY : 드라이클리닝 / 단독세탁</li>
+            <li> MADE : KOREA</li>
+          </ul>
+
+          <ul class="color_explain">
+            <li>▪제품을 오랫동안 사용하시려면 세탁은 드라이클리닝을 권장합니다.</li>
+            <li>▪세탁 후에 오는 변형 및 오염에 주의해주세요.</li>
+            <li>▪데님이나 컬러가 진한 제품은 물빠짐으로 인해 이염이 생길 수 있습니다.</li>
+          </ul>
+         </div>
+        </div>
+
+         
+          <div class="fabric_zoom">
+            <h3>FABRIC ZOOM</h3>
+           <div class="fabric_img">
+              <img src="./images/FABRIC ZOOM.jpeg" alt="fabric_img">
+           </div>
+           <ul class="fabric_zoom_explain">
+              <li>▪소재 : 코튼 98% / 스판 2%</li>
+              <li>▪세탁방법</li>
+              <li> - 드라이클리닝 / 단독세탁</li>
+              <li> - 뒤집어 차가운 물에 손세탁 또는, 세탁기 울 코스로 단독세탁.</li>
+              <li> - 일반적으로 어떤 세탁 방법도 무난하지만, 색상별로 구분해서 세탁해야 변형이 없습니다.
+              </li>
+            </ul>
+          </div>
+
+        <div class="check_up">
+          <table>
+            <tr>
+              <th>두께감</th>
+              <td>두꺼움</td>
+              <td class="background_color">적당함</td>
+              <td>얇음</td>
+            </tr>
+
+            <tr>
+              <th>비침</th>
+              <td>있음</td>
+              <td>약간</td>
+              <td class="background_color">없음</td>
+            </tr>
+
+            <tr>
+              <th>신축성</th>
+              <td>좋음</td>
+              <td class="background_color">약간</td>
+              <td>없음</td>
+            </tr>
+
+            <tr>
+              <th>핏감</th>
+              <td>타이트핏</td>
+              <td class="background_color">슬림핏</td>
+              <td>베이직핏</td>
+              <td>루즈핏</td>
+            </tr>
+
+            <tr>
+              <th>안감</th>
+              <td>있음</td>
+              <td class="background_color">없음</td>
+              <td>부분안감</td>
+            </tr>
+
+            <tr>
+              <th>패드</th>
+              <td>가슴패드</td>
+              <td>어깨패드</td>
+              <td class="background_color">없음</td>
+            </tr>
+
+            <tr>
+              <th>지퍼</th>
+              <td>앞</td>
+              <td>옆</td>
+              <td>뒤</td>
+              <td class="background_color">없음</td>
+            </tr>
+
+            <tr>
+              <th>사이즈</th>
+              <td>한치수작음</td>
+              <td>반치수작음</td>
+              <td class="background_color">정사이즈</td>
+              <td>반치수큼</td>
+            </tr>
+
+            <tr>
+              <th>촉감</th>
+              <td>부드러움</td>
+              <td class="background_color">적당</td>
+              <td>거침</td>
+            </tr>
+
+            <tr>
+              <th>계절감</th>
+              <td class="background_color">봄</td>
+              <td>여름</td>
+              <td class="background_color">가을</td>
+              <td>겨울</td>
+            </tr>
+          </table>
+        </div>
+       </section>
+
+       <div class="model_info" id="model">
+        <ul class="info_type">
+          <li><p><a href="#info">상세정보</a></p></li>
+          <li class="model"><p><a href="#model">모델인포</a></p></li>
+          <li><p><a href="#buy">구매안내</a></p></li>
+          <li><p><a href="#product">관련상품</a></p></li>
+          <li><p><a href="#review">상품후기 (2)</a></p></li>
+          <li><p><a href="#qna">상품문의</a></p></li>
+          </ul>
+        
+        <div class="model_info_box">
+          <p>MODEL profile</p>
+
+          <div class="model_info">
+          <div class="model_img">
+            <img src="./images/model.jpg" alt="model_img">
+          </div>
+          <ul class="model_explain">
+            <li>height 167cm</li>
+            <li>top 44(1/2) - 55</li>
+            <li>bust 75B</li>
+            <li>bottom 26 - 27(s)</li>
+            <li>shoes 230cm</li>
+          </ul>
+        </div>
+        </div>
+       </div>
+
+
+     
+
+       <input type="checkbox" id="chk_plus_01">
+       <input type="checkbox" id="chk_plus_02">
+       <input type="checkbox" id="chk_plus_03">
+
+  <div class="buyers_guide" id="buy">
+
+        
+    <ul class="info_type">
+      <li><p><a href="#info">상세정보</a></p></li>
+      <li><p><a href="#model">모델인포</a></p></li>
+      <li class="buy"><p><a href="#buy">구매안내</a></p></li>
+      <li><p><a href="#product">관련상품</a></p></li>
+      <li><p><a href="#review">상품후기 (2)</a></p></li>
+      <li><p><a href="#qna">상품문의</a></p></li>
+    </ul>
+
+    <h4>구매안내</h4>
+        
+         
+    <div class="product_explain_box">
+          
+      <div class="product_explain_01">
+            
+        <p class="big_font_size">상품결제</p>
+            
+        <div class="product_plus_img">
+
+          <label for="chk_plus_01">
+            <span class="plus">
+              <img src="./images/product_plus_img.png" alt="plus_img">
+            </span>
+            
+            <span class="minus">
+              <img src="./images/product_minus_img.png" alt="minus_img">
+            </span>
+          </label>
+          
+          <div class="explain">
+            <p class="explain_01">
+              ▪고액결제의 경우, 카드사에서 확인 전화를 드릴 수 있습니다. 확인 과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소 할 수 있습니다.
+              <br>
+              ▪무통장 입금의 경우, 상품 구매 대금은 PC뱅킹, 인터넷 뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.
+              <br>
+              ▪주문 시 입력한 입금자명과 실제 입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금이 안될 시 주문이 자동취소됩니다.    
+            </p>
+          </div>
+        </div>
+     </div>
+
+     <div class="product_explain_02">
+
+      <p class="big_font_size">교환과 반품</p>
+
+      <div class="product_plus_img">
+        <label for="chk_plus_02">
+          <span class="plus">
+            <img src="./images/product_plus_img.png" alt="plus_img">
+          </span>
+           
+          <span class="minus">
+            <img src="./images/product_minus_img.png" alt="minus_img">
+          </span>
+       </label>
+
+        <div class="explain">
+
+          <p class="explain_02">
+            ▪교환 및 반품을 원하시는 경우, 상품 수령일로부터 5일 이내 구매한 사이트의 고객센터로 교환 및 반품 의사를 밝혀주세요.
+            <br>
+            ▪상품 불량과 오배송으로 인한 반품을 제외한 모든 교환 및 반품은 고객 부담 배송비 6,000원이 부과됩니다.
+            <br>
+            ▪오배송 및 하자 배송은 상품을 보내시기 전에 고객센터 또는 Q&A로 연락주시기 바랍니다.
+            <br>
+            ▪제품하자의 환불 / 교환 / 수리 등은 '공정거래위원회 소비자 분쟁 해결기준'에 준하여 처리됩니다.
+            <br>
+            ▪타 택배 이용 시 추가요금이 부과될 수 있으며, 추가된 요금에 대해서는 고객님께서 부담하셔야 합니다.
+          </p>
+       </div>
+
+      </div>
+     </div>
+
+     <div class="product_explain_03">
+
+      <p class="big_font_size">배송</p>
+
+      <div class="product_plus_img">
+
+        <label for="chk_plus_03">
+          <span class="plus">
+           <img src="./images/product_plus_img.png" alt="plus_img">
+         </span>
+
+         <span class="minus">
+           <img src="./images/product_minus_img.png" alt="minus_img">
+         </span>
+       </label>
+
+       <div class="explain">
+        <p class="explain_03">
+          ▪배송기간은 결제일을 기준으로 평균 2~4일 소요됩니다. (주말, 공휴일 제외)
+          <br>
+          ▪제품 품절로 인한 리더오일 경우, 제작기간이 소요되며 배송이 지연될 수 있습니다.
+          <br>
+          ▪지역과 기상악화, 물류 폭주 등 택배사의 상황에 따라 배송이 지연될 수 있습니다.
+        </p>
+       </div>
+      </div>
+     </div>
+   </div>
+
+  </div>
+
+  <div class="related_product_box">
+
+   <ul class="info_type" id="product">
+
+    <li><p><a href="#info">상세정보</a></p></li>
+    <li><p><a href="#model">모델인포</a></p></li>
+    <li><p><a href="#buy">구매안내</a></p></li>
+    <li class="product"><p><a href="#product">관련상품</a></p></li>
+    <li><p><a href="#review">상품후기 (2)</a></p></li>
+    <li><p><a href="#qna">상품문의</a></p></li>
+   </ul>
+
+   <h4>관련상품</h4>
+
+  <div class="related_product">
+
+    <div>
+      <a href="#!">
+        <ul class="related_product_01">
+
+          <li>
+           <img src="./images/related img_04.jpg" alt="related_img_04">
+          </li>
+          <li>
+           <img src="./images/related img_04_01.png" alt="related_img_04_01">
+          </li>
+          <li>
+           <img src="./images/related img_04_02.png" alt="related_img_04_02">
+          </li>
+          <li>
+           <img src="./images/related img_04_03.png" alt="related_img_04_03">
+          </li>
+          <li>
+           <img src="./images/related img_04_04.png" alt="related_img_04_04">
+          </li>
+          <li>
+           <img src="./images/related img_04.jpg" alt="related_img_04">
+          </li>
+        </ul>
+      </a>
+
+      <div class="info">
+        <p>앞포켓 부츠컷 팬츠</p>
+        <p>45,600원</p>
+      </div>
+   </div>
+
+      
+        
+
+    <div>
+      <a href="#!">
+        <ul class="related_product_02">
+          <li>
+            <img src="./images/related img_03.jpg" alt="related_img_03">
+          </li>
+          <li>
+            <img src="./images/related img_03_01.png" alt="related_img_03_01">
+          </li>
+          <li>
+            <img src="./images/related img_03_02.png" alt="related_img_03_02">
+          </li>
+          <li>
+            <img src="./images/related img_03_03.png"  alt="related_img_03_03">
+          </li>
+          <li>
+            <img src="./images/related img_03_04.png" alt="related_img_03_04">
+          </li>
+          <li>
+            <img src="./images/related img_03.jpg" alt="related_img_03">
+          </li>
+        </ul>
+      </a>
+
+      <div  class="info">
+        <p>1978 반팔 크롭 탑</p>
+        <p>15,200원</p>
+      </div>
+
+    </div>
+
+            
+         
+
+    <div>
+      <a href="#!">
+        <ul class="related_product_03">
+          <li>
+            <img src="./images/related img_02.jpg" alt="related_img_02">
+          </li>
+          <li>
+            <img src="./images/related img_02_01.png" alt="related_img_02_01">
+          </li>
+          <li>
+            <img src="./images/related img_02_02.png" alt="related_img_02_02">
+          </li>
+          <li>
+            <img src="./images/related img_02_03.png" alt="related_img_02_03">
+          </li>
+          <li>
+            <img src="./images/related img_02_04.png" alt="related_img_02_04">
+          </li>
+          <li>
+            <img src="./images/related img_02.jpg" alt="related_img_02">
+          </li>
+        </ul>
+      </a>
+
+      <div  class="info">
+        <p>오셋 레이어드 네크리스</p>
+        <p>16,000원</p>
+      </div>
+
+    </div>
+
+           
+       
+          
+    <div>
+      <a href="#!">
+        <ul class="related_product_04">
+          <li>
+            <img src="./images/related img_01.jpg" alt="related_img_01">
+          </li>
+          <li>
+            <img src="./images/related img_01_01.png" alt="related_img_01_01">
+          </li>
+          <li>
+            <img src="./images/related img_01_02.png" alt="related_img_01_02">
+          </li>
+          <li>
+            <img src="./images/related img_01_03.png" alt="related_img_01_03">
+          </li>
+          <li>
+            <img src="./images/related img_01_04.png" alt="related_img_01_04">
+          </li>
+          <li>
+            <img src="./images/related img_01.jpg" alt="related_img_01">
+          </li>
+        </ul>
+      </a>
+
+      <div  class="info">
+        <p>아몬드리 꼬임 가시링</p>
+        <p>10,000원</p>
+      </div>
+          
+    </div>
+
+  </div>
+
+</div>
+
+<div class="review_box" id="review">
+
+  
+  <ul class="info_type" >
+    <li><p><a href="#info">상세정보</a></p></li>
+    <li><p><a href="#model">모델인포</a></p></li>
+    <li><p><a href="#buy">구매안내</a></p></li>
+    <li><p><a href="#product">관련상품</a></p></li>
+    <li class="customer_review"><p><a href="#review">상품후기 (2)</a></p></li>
+    <li><p><a href="#qna">상품문의</a></p></li>
+  </ul>
+
+  <h4>상품후기</h4>
+
+  <div class="review" >
+     
+    <div class="review_event_img">
+      <img src="./images/contents_review.jpg" alt="review_event_img">
+    </div>
+
+    <div class="total_review">
+      <h3>리뷰 (2)</h3>
+      <div class="review_left">
+        <div class="star">
+          <span>
+           <i class="fa-solid fa-star"></i>
+          </span>
+          <span>
+            <h3>5.0</h3>
+          </span>
+        </div>
+
+        <p>99.5% 구매자들이 이 상품에 만족하고 있어요!</p>
+
+        <input type="button" value="상품 리뷰 작성하기">
+
+      </div>
+
+      <div class="review_right">
+        <img src="./images/review_수치.png" alt="review_img">
+      </div>
+
+    </div>
+
+      <div class="photo_review">
+        <h3>포토&동영상</h3>
+
+        <div class="photo_review_01">
+            
+            <div class="photo_reivew_img_01">
+              <img src="./images/photo_review_01.jpg" alt="phoro_review_img_01">
+            </div>
+            <div class="photo_reivew_img_02">
+              <img src="./images/photo_review_02.jpg" alt="phoro_review_img_02">
+            </div>
+            <div class="photo_reivew_img_03">
+              <img src="./images/photo_review_03.jpg" alt="phoro_review_img_03">
+            </div>
+            <div class="photo_reivew_img_04">
+              <img src="./images/photo_review_04.jpg" alt="phoro_review_img_04">
+            </div>
+        </div>
+
+        <ul class="list">
+              <li><a href="#!">최신순</a></li>
+              <li><a href="#!">추천순</a></li>
+              <li><a href="#!">별점순</a></li>
+        </ul>
+
+        <div class="recommendation_review">
+          <p class="brand">브랜드 추천 리뷰</p>
+
+          <ul>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li>아주 좋아요</li>
+          </ul>
+          <p class="review_p">모델분이 입으신 대로 코디했더니 너무 맘에 들어요!!
+           <br>
+          친구들도 다 이쁘다고 난리네요 ㅎㅎ
+          </p>
+
+          <div class="recommendation_review_img">
+
+            <div class="recommendation_review_img_01">
+              <img src="./images/small_photo_review_01.png" alt="photo_review_img_01">
+            </div>
+            <div class="recommendation_review_img_02">
+              <img src="./images/small_photo_review_02.png" alt="photo_review_img_02">
+            </div>
+            <div class="recommendation_review_img_03">
+              <img src="./images/small_photo_review_03.png" alt="photo_review_img_03">
+
+            </div>
+         </div>
+
+          <ul>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li>아주 좋아요</li>
+          </ul>
+          <p class="review_p">
+            별로 기대안했는데 자켓 핏 미쳤어요 !
+            <br>
+            기장도 딱 맞고 너무 이뻐용
+            <br>
+            팔부분 접어서 입어도 이쁘구 다른색도 나오면 구매하고 싶네용!!
+          </p>
+
+          <div class="recommendation_review_img">
+
+            <div class="recommendation_review_img_01">
+              <img src="./images/small_photo_review_04.png" alt="photo_review_img_01">
+            </div>
+            <div class="recommendation_review_img_02">
+              <img src="./images/small_photo_review_05.jpg" alt="photo_review_img_02">
+            </div>
+            <div class="recommendation_review_img_03">
+              <img src="./images/small_photo_review_07.jpg" alt="photo_review_img_03">
+            </div>
+         </div>
+
+          <div class="number">
+            <a href="#!"><<</a>
+            <a href="#!">1</a>
+            <a href="#!">2</a>
+            <a href="#!">3</a>
+            <a href="#!">4</a>
+            <a href="#!">5</a>
+            <a href="#!">>></a>
+          </div>
+
+        </div>
+
+       </div>
+
+  </div>
+</div>
+
+  <div class="cody_trend_box">
+    <h4>CODY TREND</h4>
+    <p><a href="#!">바로가기 클릭</a></p>
+    <div class="cody_trend">
+      <div class="cody_trend_img_01">
+        <img src="./images/cody_trend_01.jpg" alt="cody_trend_img_01">
+      </div>
+
+      <div>
+        <p>#데이트룩_추천</p>
+       
+        <p>신축성 있는 폴리 소재❕</p>
+        <p>one color</p>
+        <p>
+          허리 라인을 잡아주어 여성스러운 실루엣을 완성해주는 셔츠 미니 원피스예요~! 
+        </p>
+        <p>
+          카라넥 라인에 숄더에는 볼륨감있는 
+          <br>
+          퍼프 디자인이라 여성스러운 무드를 
+          <br>
+          잘 살려주었고 앞에는 핀턱 디테일로
+          <br>
+          허리가 잘록해보이고 뒤에는 밴딩으로 
+          <br>
+          잡아주어서 허리가 들뜸없이 슬림하게 
+          <br>
+          잡히면서 편하게 착용가능해요!
+        </p>
+       
+        <p>#추천룩 #코디추천
+          <br>
+          <br>
+          단품 또는 가디건이나 자켓 등 아우터와
+          <br>
+          매치하여 페미닌하고 세련된 무드의
+          <br>
+          룩 스타일링을 추천드려요 :)
+        </p>
+        <p>#관련상품 바로가기</p>
+        <p><a href="#!">뉴테브 뒷트임 베이직 자켓</a></p>
+      </div>
+
+      <div class="cody_trend_img_02">
+        <img src="./images/cody_trend_02.jpg" alt="cody_trend_img_02">
+      </div>
+
+      <div class="cody_trend_img_03">
+        <img src="./images/cody_trend_03.jpg" alt="cody_trend_img_03">
+      </div>
+
+      <div class="cody_trend_img_04">
+        <img src="./images/cody_trend_04.jpg" alt="cody_trend_img_04">
+      </div>
+
+      <div class="cody_trend_img_05">
+        <img src="./images/cody_trend_05.jpg" alt="cody_trend_img_05">
+      </div>
+
+      <div class="cody_trend_img_06">
+        <img src="./images/cody_trend_06.jpg" alt="cody_trend_img_06">
+      </div>
+
+      <div class="cody_trend_img_07">
+        <img src="./images/cody_trend_07.jpg" alt="cody_trend_img_07">
+      </div>
+
+    </div>
+
+  
+  </div>
+
+  <div class="qna_big_box" id="qna">
+
+  <ul class="info_type">
+    <li><p><a href="#info">상세정보</a></p></li>
+    <li><p><a href="#model">모델인포</a></p></li>
+    <li><p><a href="#buy">구매안내</a></p></li>
+    <li><p><a href="#product">관련상품</a></p></li>
+    <li><p><a href="#review">상품후기 (2)</a></p></li>
+    <li class="product_qna"><p><a href="#qna">상품문의</a></p></li>
+  </ul>
+
+  <h4>상품문의</h4>
+
+  <div class="qna_box">
+    
+    <div class="qna">
+      <h5>Q&A</h5>
+      <ul>
+        <li><a href="#!">상품문의 드립니다.</a></li>
+        <li><a href="#!">상품반품문의 드립니다.</a></li>
+      </ul>
+    </div>
+    <div class="notice">
+      <h5>NOTICE</h5>
+      <ul>
+        <li>
+          <a href="#!">
+           <red>*</red><ins>반품 및 교환 주소지 변경 안내</ins><red>*</red>
+          </a>
+        </li>
+        <li>
+          <a href="#!">
+           <ins>배송 시스템 및 반품규정 안내</ins>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+  <!--footer-->
+  
+<footer class="footer" id="footer">
+
+  <h3>MING land</h3>
+
+  <div class="info">
+
+  <ul class="name">
+    <h4>company</h4>
+    <li>company name MING land  owner 박민지</li>
+    <li>businiess no  123-12-12345</li>
+    <li>main order license  제 2023-서울청담-1234호</li>
+    <li>personal info manager  박민지</li>
+    <li>tel 1234-1234  /  email ming_land@naver.com</li>
+    <li>address  12345 서울특별시 강남구 청담동</li>
+
+  </ul>
+
+  <ul class="time">
+    <h4>c/s</h4>
+    <li>1234-1234</li>
+    <li>평일 09:00 ~ 18:00 / 점심 12:00 ~ 13:00</li>
+    <li>토, 일, 공휴일 휴무</li>
+    <br>
+    <li>*고객센터 운영시간에 순차적으로 답변드리겠습니다.</li>
+    <li>*통화량이 많을 때는 문의 게시판으로 문의부탁드립니다.</li>
+
+    <br>
+    <ul>
+     <li class="qna">
+      <a href="#">Q&A</a>
+     </li>
+     <li class="notice">
+      <a href="#">NOTICE</a>
+     </li>
+    </ul>
+  </ul>
+
+  <ul class="bank">
+    <h4>bank</h4>
+    <li>예금주 MING land 대표자 박민지</li>
+    <li>농협 302-1648-1982-61</li>
+    <br>
+    <li>*입금자명이 다를 시 자동입금 확인이 불가합니다.</li>
+    <li>*무통장 입금의 경우 24시간 이내 입금해주셔야합니다.</li>
+  </ul>
+
+  <ul class="address">
+    <h4>교환/반품</h4>
+    <li>12345</li>
+    <li>서울특별시 강남구 청담동</li>
+    <li>MING land</li>
+    <br>
+    <li>CJ 대한통운</li>
+  </ul>
+
+ </div>
+
+ <ul class="menu">
+  <li class="home_menu">
+    <a href="#">
+      <span>
+        <img src="./images/home_menu.gif" alt="home_menu">
+      </span>
+      <span>
+        <img src="./images/home_menu_hover.gif" alt="home_menu">
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="#">회사소개</a>
+  </li>
+  <li>
+    <a href="#">이용약관</a>
+  </li>
+  <li>
+    <a href="#">개인정보처리방침</a>
+  </li>
+ </ul>
+
+</footer>

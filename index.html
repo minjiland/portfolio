@@ -1,0 +1,1000 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+    <!--css-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--jQuery-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!--google_font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--font_awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- color_box -->
+    <link rel="stylesheet" href="./js/colorbox-master/colorbox.css"/>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="./js/colorbox-master/jquery.colorbox.js"></script>
+
+
+  <script>
+
+    //full_page
+    $(function(){
+
+      $('section').mousewheel(function(event, delta){
+        if(delta>0) {
+          let prev = $(this).prev().offset().top
+          $('html, body').stop().animate({
+            scrollTop: prev
+          }, 2000, 'easeOutBounce')
+        } else if (delta<0) {
+          let next = $(this).next().offset().top
+          $('html, body').stop().animate({
+            scrollTop: next
+          }, 2000, 'easeOutBounce')
+        }
+      })
+
+    //color_box
+      $(document).ready(function(){
+
+        $(".group4").colorbox({rel:'group4', slideshow:true});
+
+        $("#click").click(function(){ 
+        $('#click').css({"background-color":"#f00", "color":"#fff","cursor":"inherit"});
+        return false;
+        });
+      });
+
+    });
+
+  </script>
+
+  
+  
+</head>
+<body>
+
+  <input type="checkbox" id="chk_cute">
+  <input type="checkbox" id="chk_more">
+
+  <input type="radio" id="chk_individual_project" name="project" checked="">
+  <input type="radio" id="chk_team_project" name="project">
+
+  <input type="radio" id="chk_event_banner" name="design" checked="">
+  <input type="radio" id="chk_card_banner" name="design">
+  <input type="radio" id="chk_uiux_app" name="design">
+
+
+  <div class="wrap">
+    <section class="intro_page" id="intro_page">
+      <ul>
+        <h1 class="introduce">반갑습니다. 끈임없이 도전하는 웹퍼블리셔 <span class="e59393">박민지</span>를 소개합니다.</h1>
+        <ul class="content_box">
+          <li class="heart_box_01">
+            <span class="heart_51">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_52">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_53">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_54">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_55">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_56">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_57">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_58">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_59">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_60">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_61">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_62">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_63">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_64">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_65">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_66">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_67">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_68">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_69">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_70">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+          </li>
+          <li class="heart_box_02">
+            <span class="heart_31">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_32">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_33">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_34">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_35">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_36">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_37">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_38">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_39">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_40">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_41">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_42">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_43">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_44">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_45">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_46">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_47">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_48">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_49">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_50">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+          </li>
+          <li class="heart_box_03">
+            <span class="heart_01">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_02">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_03">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_04">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_05">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_06">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_07">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_08">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_09">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_10">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_11">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_12">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_13">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_14">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_15">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_16">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_17">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_18">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_19">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_20">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_21">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_22">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_23">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_24">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_25">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_26">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_27">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_28">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_29">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+            <span class="heart_30">
+              <img src="./images/heart_img.png" alt="heart_img">
+            </span>
+          </li>          
+
+          <li class="my_img">
+            <span>
+              <p>2023.03.22</p>
+              <img src="./images/face_img_02.png" alt="my_img_02">
+            </span>
+            <span>
+              <p>2023.04.24</p>
+              <img src="./images/face_img_01.png" alt="my_img_01">
+            </span>
+            <span>
+              <p>2023.11.26</p>
+              <img src="./images/face_img_03.png" alt="my_img_03">
+            </span> 
+          </li>
+        
+          <li class="big_img">
+            <!-- <span>
+            <img src="./images/옴팡이.png" alt="character_img">
+            </span>
+            <span>
+            <img src="./images/옴팡이_01_img.png" alt="character_img">
+            </span>
+            <span>
+            <img src="./images/옴팡이_02.png" alt="character_img">
+            </span> -->
+            <span class="cute_img">
+              <label for="chk_cute">
+                <img src="./images/옴팡이_img.png" alt="character_img">
+              </label>
+              <span>click!!</span>
+              <span>click!!</span>
+            </span>
+          </li>
+          
+          
+        </ul>
+      </ul>
+    </section>
+
+    <section class="profile_page" id="profile_page">
+      <h1>PROFILE</h1>
+      <ul>
+        <label for="chk_more">
+          <li class="profile_img">  
+            <span class="profile">
+              <img src="./images/profile_06.jpg" alt="profile_img">
+            <span>
+              <p>박민지 / Park Min Ji</p>
+              <p>2000.05.28 / 24세</p>
+              <p>부산시 동구 조방로 14 (회사 근처로 이동가능)</p>
+            </span>
+          </li>
+        </label>
+        <li class="info">
+          <p class="determination">저의 도전 정신을 통해 회사의 업무에 헌신하고 혁신적인 아이디어를 제공하며 회사에 가치를 더하고자합니다.</p>
+          <h2>EDUCATION</h2>
+          <p>2023 반응형 웹디자인 & 웹퍼블리셔 과정 이수</p>
+          <p>2023 사하동물의료원 퇴사</p>
+          <p>2021 부산여자대학교 보건행정과 졸업</p>
+          <p>2019 부산경호고등학교 졸업</p>
+          <h2>LICENSE</h2>
+          <p>2021 운전면허 2종 보통 취득</p>
+          <p>2018 바리스타 2급 취득</p>
+        </li>
+        <li class="profile_sub_img">
+          <span>
+            <img src="./images/profile_01.jpg" alt="profile_img_01">
+          </span>
+          <span>
+            <img src="./images/profile_02.jpg" alt="profile_img_01">
+          </span>
+          <span>
+            <img src="./images/profile_03.jpg" alt="profile_img_01">
+          </span>
+          <span>
+            <img src="./images/profile_04.jpg" alt="profile_img_01">
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="skill_page" id="skill_page">
+      <h1>SKILL</h1>
+      <ul>
+        <li class="web">
+          <h2>웹개발</h2>
+          <ul class="web_size">
+            <li class="margin-left margin-bottom">
+              <span class="html5_img name">
+                <img src="./images/html5_icon.png" alt="html5_img">
+              </span>
+              <span class="word">HTML5</span>
+              <span class="simple">
+                <p>
+                  - 웹접근성과 웹표준을 준수한 semantic tag 사용가능
+                  <br>
+                  - picture tag를 활용한 media query 사용가능
+                  - media query를 이용하여 반응형 사이트 제작가능
+                  <br>
+                  - img audio video tag를 활용한 멀티 미디어 태그 사용가능
+                  <br>
+                  - form tag를 사용해서 회원가입 페이지 제작가능
+                  <br>
+                  - 목록태그를 활용하여 메뉴구조 구성가능
+                  <br>
+                  - table태그를 사용한 표 구현가능
+                </p>
+              </span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_lv9">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 9</span>
+            </li>
+
+            <li class="margin-left margin-bottom">
+              <span class="css3_img name">
+                <img src="./images/css_icon.png" alt="css3_img">
+              </span>
+              <span class="word">CSS3</span>
+              <span class="simple simple_css">
+                <p>
+                  - 웹표준 태그 구현 및 구조 작성 가능
+                  <br>
+                  - html로 배치한 작업물의 width height margin 등을 이용하여 스타일 설정가능
+                  <br> 
+                  - 12column 레이아웃 그리드에 맞는 웹사이트 및 반응형 사이트 구현가능
+                  <br>
+                  - key frame을 활용한 animation 사용가능
+                  <br>
+                  - transition을 사용한 풀다운메뉴 또는 컨텐츠 구현가능
+                  <br>
+                  - position flex float를 활용한 이미지 위치 선정가능
+                  <br>
+                  - radio button으로 tab page 제작가능
+                  <br>
+                  - check box를 활용한 팝업창 구현가능
+                </p>
+              </span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_lv9">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 9</span>
+            </li>
+
+            <li class="margin-left margin-bottom">
+              <span class="js_img name">
+                <img src="./images/js_icon.png" alt="JavaScript_img">
+              </span>
+              <span class="word">JavaScript</span>
+              <span class="simple simple_js">
+                <p>
+                  - Slick, sliderbx, swiper를 활용한 플러그인 활용가능
+                  <br>
+                  - Jquery 사용을 위한 기본적인 기능습득
+                  <br>
+                  - 배열 function 기본 개념 이해
+                  <br>
+                  - animate 함수를 활용한 애니메이션 제작경험
+                </p>
+              </span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_js">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 3</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="margin-bottom">
+              <span class="jquery_img name">
+                <img src="./images/jQuery_icon.png" alt="jQuery_img">
+              </span>
+              <span class="word">jQuery</span>
+              <span class="simple simple_js">
+                <p>
+                  - 선택자 구분 경험
+                  <br>
+                  - tag element dome 제어, 객체 활용
+                  <br>
+                  - effect 함수를 활용한 animate 제작과 화면 제어가능
+                  <br>
+                  - jQuery plugin 사용가능
+                </p>
+              </span>
+            </li>
+            <li class="progress_box">
+              <span class="progress_bar"> 
+                <span class="progress_lv5">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 5</span>
+            </li>
+
+            <li class="margin-bottom">
+              <span class="jquery_img name">
+                <img src="./images/react_icon.png" alt="React_img">
+              </span>
+              <span class="word">React</span>
+              <span class="simple simple_js">
+                <p>
+                  - 컴퍼넌트 구현경험
+                  <br>
+                  - 로드 제이에스를 사용한 외부 라이브러리 설치 경험
+                  <br>
+                  - 라우터를 이용한 서브페이지 디테일 페이지 생성 경험
+                  <br>
+                  - styled 컴퍼넌트를 사용경험
+                </p>
+              </span>
+            </li>
+            <li class="progress_box">
+              <span class="progress_bar"> 
+                <span class="progress_lv5">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 5</span>
+            </li>
+          </ul>
+        </li>
+
+        <li class="design">
+          <h2>2D 디자인</h2>
+          <ul class="design_size">
+            <li class="margin-left margin-bottom">
+              <span class="photoshop_img name">
+                <img src="./images/photoshop_icon.png" alt="photoshop_img">
+              </span>
+              <span class="word">Photoshop</span>
+              <span class="simple simple_design">
+                <p>
+                  - 기본적인 툴 사용가능
+                  <br>
+                  - 편집기능 사용가능
+                  <br>
+                  - 보정을 위한 리터칭 가능
+                  <br>
+                  - 이미지 리사이징 가능
+                  <br>
+                  - 12그리드 시스템을 이용한 프로토타입 제작가능
+                  <br>
+                  - 타임라인을 이용한 애니메이션 제작가능
+                </p>
+              </span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_lv9">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 9</span>
+            </li>
+
+            <li class="margin-left margin-bottom">
+              <span class="illustrator_img name">
+                <img src="./images/illustrator_icon.png" alt="illustrator_img">
+              </span>
+              <span class="word">Illustrator</span>
+              <span class="simple simple_design simple_ai">
+                <p>
+                  - 기본적인 툴 & 편집기능 사용가능
+                  <br>
+                  - 보정을 위한 리터칭 가능
+                  <br>
+                  - 이미지 리사이징 가능
+                  <br>
+                  - UIUX제작가능
+                </p>
+              </span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_lv8">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 8</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="margin-bottom">
+              <span class="figma_img name">
+                <img src="./images/figma_icon.png" alt="figma_img">
+              </span>
+              <span class="word">Figma</span>
+              <span class="simple simple_design">
+                <p>
+                  - 기본적인 툴 사용가능
+                  <br>
+                  - 기본적인 컴퍼넌트 인스턴스 사용가능
+                  <br>
+                  - 프로토타입 제작가능
+                  <br>
+                  - 팀 프로젝트, 개인 프로젝트 활용가능
+                  <br>
+                  - 외부아이콘 적용가능
+                  <br>
+                  - auto layout을 활용한 슬라이드효과 구현가능
+                </p>
+              </span>
+            </li>
+            <li class="progress_box">
+              <span class="progress_bar"> 
+                <span class="progress_lv9">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 9</span>
+            </li>
+          </ul>
+        </li>
+        <li class="document">
+          <h2>문서</h2>
+          <ul class="document_size">
+            <li class="margin-left margin-bottom">
+              <span class="word_img name">
+                <img src="./images/word_icon.png" alt="word_img">
+              </span>
+              <span class="word">Word</span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_lv8">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 8</span>
+            </li>
+
+            <li class="margin-left margin-bottom">
+              <span class="powerpoint_img name">
+                <img src="./images/powerpoint_icon.png" alt="powerpoint_img">
+              </span>
+              <span class="word">Power point</span>
+            </li>
+            <li class="progress_box margin-left">
+              <span class="progress_bar"> 
+                <span class="progress_lv8">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 8</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="margin-bottom">
+              <span class="excel_img name">
+                <img src="./images/excel_icon.png" alt="excel_img">
+              </span>
+              <span class="word">Excel</span>
+            </li>
+            <li class="progress_box">
+              <span class="progress_bar"> 
+                <span class="progress_lv5">
+                  <img src="./images/옴팡이_하트.gif" alt="progress_img">
+                </span>
+               </span>
+               <span class="level">LV. 5</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="index_page" id="index_page">
+      <h1>INDEX</h1>
+      <ul>
+        <li>
+          <ul class="publishing_title">
+            <h2 class="title">1. PUBLISHING</h2>
+            <li>
+              <label for="chk_individual_project">
+                <h5 class="individual_project">1-1 개인 프로젝트 - 의류쇼핑몰 제작</h5>
+              </label>
+              <label for="chk_team_project">
+                <h5>1-2 팀 프로젝트 - 멜론 사이트 리뉴얼</h5>
+              </label>
+            </li>
+          </ul>
+          <ul class="publishing_img">
+            <li class="individual_project_img pc_img">
+              <img src="./images/index_publishing_imac.png" alt="개인프로젝트_img">
+            </li>
+            <li class="team_project_img pc_img">
+              <img src="./images/index_melon_iMac.png" alt="팀프로젝트_img">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="design_title">
+            <h2 class="title">2. DESIGN</h2>
+            <li>
+              <label for="chk_event_banner">
+                <h5>2-1 이벤트 배너 디자인</h5>
+              </label>
+              <label for="chk_card_banner">
+                <h5>2-2 카드 배너 디자인</h5>
+              </label>
+              <label for="chk_uiux_app">
+                <h5>2-3 UI&UX 앱디자인</h5>
+              </label>
+            </li>
+          </ul>
+          <ul class="design_img">
+            <li class="event_banner_img">
+              <img src="./images/event_banner_01.jpg" alt="event_banner_img">
+            </li>
+            <li class="card_banner_img">
+              <img src="./images/card_banner_01.jpg" alt="card_benner_img">
+            </li>
+            <li class="uiux_app_img">
+              <img src="./images/mykey_01.png" alt="mykey_log_img">
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="publishing_page" id="publishing_page">
+      <h1>PUBLISHING</h1>
+      <ul class="shop_box">
+        <h2>1. 개인프로젝트 - 의류쇼핑몰 제작</h2>
+        <li class="shop">
+          <span class="shop_imac">
+            <img src="./images/publishing_imac.png" alt="imac_mingland_shop_img">
+          </span>
+          <span class="shop_iphone">
+            <img src="./images/publishing_iphone.png" alt="iphone_mingland_shop_img">
+          </span>
+        </li>
+        <li class="shop_project_explain explain">
+          <a href="./project_01(mingland)/index.html">
+            <p><red>*</red>첫 개인 프로젝트<red>*</red></p>
+            <p>프로젝트명 : 쇼핑몰제작 -&gt; MING land</p>
+            <p>프로젝트 구성 : Main, Sub, Detail, Mobile</p>
+            <p>사용 툴 : HTML5, CSS3, Photoshop, Illustrator</p>
+            <p>전체 제작 기간 : 2개월</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="melon_box">
+        <h2>2. 팀프로젝트 - 멜론 사이트 리뉴얼</h2>
+        <li class="melon">
+          <span class="melon_imac">
+            <img src="./images/index_melon_iMac.png" alt="melon_imac_img">
+          </span>
+          <span class="melon_ipad">
+            <img src="./images/publishing_melon_ipad.png" alt="melon_ipad_img">
+          </span>
+          <span class="melon_iphone">
+            <img src="./images/publishing_melon_iphone.png" alt="melon_iphone_img">
+          </span>
+        </li>
+        <li class="melon_project_explain explain">
+          <a href="./project_02(melon)/index.html">
+            <p><red>*</red>팀 프로젝트<red>*</red></p>
+            <p>프로젝트명 : 사이트 리뉴얼 - 멜론 사이트 리뉴얼</p>
+            <p>프로젝트 구성 : Main, Sub#2 Mobile / 반응형</p>
+            <p>사용 툴 : HTML5, CSS3, jQuery - plugin(swiper, slick) Photoshop, Illustrator</p>
+            <p>전체 제작 기간 : 1개월</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="design_page" id="design_page">
+      <h1>DESIGN</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper event_banner_box">
+        <h2>1. 이벤트 배너 디자인</h2>
+        <div class="swiper-wrapper event_banner">
+          <div class="swiper-slide event">
+            
+            <a class="group4"  href="./images/event_banner_01.jpg" title="Jennyhouse 메이크업 광고배너">
+              <img src="./images/event_banner_01.jpg">
+            </a>
+          </div>
+          <div class="swiper-slide event">
+            <a class="group4"  href="./images/event_banner_02.jpg" title="크리스피크림 도넛 시즌메뉴 광고배너">
+              <img src="./images/event_banner_02.jpg">
+            </a>
+          </div>
+          <div class="swiper-slide event">
+            <a class="group4"  href="./images/event_banner_03.jpg" title="네크리스 신상 광고배너">
+              <img src="./images/event_banner_03.jpg">
+            </a>
+          </div>
+          <div class="swiper-slide event">
+            <a class="group4"  href="./images/event_banner_04.jpg" title="안다르 블랙프라이데이 광고배너">
+              <img src="./images/event_banner_04.jpg">
+            </a>
+          </div>
+          <div class="swiper-slide event">
+            <a class="group4"  href="./images/event_banner_05.jpg" title="AHC 신상 광고배너">
+              <img src="./images/event_banner_05.jpg">
+            </a>
+          </div>
+          <div class="swiper-slide event">
+            <a class="group4"  href="./images/event_banner_06.jpg" title="남성 수트 여름 할인 행사 배너">
+              <img src="./images/event_banner_06.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Swiper -->
+      <div class="swiper mySwiper card_banner_box">
+        <h2>2. 카드 배너 디자인</h2>
+        <div class="swiper-wrapper card_banner">
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_01.jpg" title="빼빼로데이 이벤트 카드배너">
+              <img src="./images/card_banner_01.jpg" alt="card_banner_img_01">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_02.jpg" title="신상 할인 행사 카드배너">
+              <img src="./images/card_banner_02.jpg" alt="card_banner_img_02">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_03.jpg" title="신규 혜택 행사 카드배너">
+              <img src="./images/card_banner_03.jpg" alt="card_banner_img_03">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_04.jpg" title="멘붕 특가 할인 카드배너">
+              <img src="./images/card_banner_04.jpg" alt="card_banner_img_04">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_05.jpg" title="귀걸이 할인 행사 카드배너">
+              <img src="./images/card_banner_05.jpg" alt="card_banner_img_05">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_06.jpg" title="파우더 광고 카드배너">
+              <img src="./images/card_banner_06.jpg" alt="card_banner_img_06">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_07.jpg" title="젝시믹스 1+1할인 행사 카드배너">
+              <img src="./images/card_banner_07.jpg" alt="card_banner_img_07">
+            </a>
+          </div>
+          <div class="swiper-slide card">
+            <a class="group4"  href="./images/card_banner_08.jpg" title="웨딩페어 카드배너">
+              <img src="./images/card_banner_08.jpg" alt="card_banner_img_08">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="design_uiux_app">
+      <div class="swiper mySwiper uiux_box">
+        <h2>3. UI&UX 앱 디자인 <red>*</red>Figma사용<red>*</red></h2>
+        <div class="swiper-wrapper uiux">
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_login.png" alt="my_key_01_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Join_01.png" alt="my_key_02_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Join_02.png" alt="my_key_03_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Join_03.png" alt="my_key_04_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Pin.png" alt="my_key_05_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_main_page.png" alt="my_key_06_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Codition.png" alt="my_key_07_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Control.png" alt="my_key_08_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_Nav.png" alt="my_key_09_img">
+          </div>
+          <div class="swiper-slide mykey_img">
+            <img src="./images/MyKey_More.png" alt="my_key_10_img">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <section class="contact_page" id="contact_page">
+      <h1>CONTACT</h1>
+      <ul>
+        <li class="contact_determination">
+          <h5>초심을 잃지 않는 디자이너가 되겠습니다.</h5>
+        </li>
+
+        <ul class="contact_box">
+          <li>
+            <span>
+              <i class="fa-solid fa-phone-volume"></i>
+            </span>
+            <span>
+              <p>010-7330-6777</p>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            <span>
+              <p>bjk4860@naver.com</p>
+            </span>
+          </li>
+        </ul>
+
+        <li class="thanks">
+          <h5>끝까지 봐주셔서 감사합니다 :)</h5>
+        </li>
+
+        <li class="copy">
+          <p>ⓒ 2023.박민지.all rights reserved</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <ul class="btn_quick_menu">
+    <li>
+      <a href="#profile_page">
+        <span>
+          <img src="./images/쀼.gif" alt="quick_menu_img_01">
+        </span>
+        <span class="menu_box">
+          <p>PROFILE</p>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#skill_page">
+        <span>
+          <img src="./images/멍.gif" alt="quick_menu_img_01">
+        </span>
+        <span class="menu_box">
+          <p>SKILL</p>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#index_page">
+        <span>
+          <img src="./images/헤.gif" alt="quick_menu_img_01">
+        </span>
+        <span class="menu_box">
+          <p>INDEX</p>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#publishing_page">
+        <span>
+          <img src="./images/풉.gif" alt="quick_menu_img_01">
+        </span>
+        <span class="menu_box">
+          <p>PUBLISHING</p>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#design_page">
+        <span>
+          <img src="./images/흠.gif" alt="quick_menu_img_01">
+        </span>
+        <span class="menu_box">
+          <p>DESIGN</p>
+        </span>
+        </a>
+    </li>
+  </ul>
+
+  <!--swiper-->
+  <script src="./js/js.js"></script>
+  <!--Link Swiper's CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!--cdnjs_mousewheel-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <!--cdnjs_easing-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+</body>
+</html>
