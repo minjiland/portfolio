@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./js/colorbox-master/colorbox.css"/>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
     <script src="./js/colorbox-master/jquery.colorbox.js"></script>
+    
 
 
   <script>
@@ -49,6 +50,10 @@
       });
 
     });
+
+    function openWindow() {
+      let newWin = window.open('./project_01(mobile.ver)/index.html','_blank','top=100, left=600,width=400,height=600'); //사용자 펑션 오픈 메소드 안에 들어가있음
+    }
 
   </script>
 
@@ -672,7 +677,7 @@
     <section class="index_page" id="index_page">
       <h1>INDEX</h1>
       <ul>
-        <li>
+        <li class="publishing_box">
           <ul class="publishing_title">
             <h2 class="title">1. PUBLISHING</h2>
             <li>
@@ -693,7 +698,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="design_box">
           <ul class="design_title">
             <h2 class="title">2. DESIGN</h2>
             <li>
@@ -722,7 +727,7 @@
         </li>
       </ul>
     </section>
-    <section class="publishing_page" id="publishing_page">
+    <section onload="openWindow()" class="publishing_page" id="publishing_page">
       <h1>PUBLISHING</h1>
       <ul class="shop_box">
         <h2>1. 개인프로젝트 - 의류쇼핑몰 제작</h2>
@@ -735,7 +740,7 @@
           </span>
         </li>
         <li class="shop_project_explain explain">
-          <a href="./project_01(mingland)/index.html">
+          <a href="./project_01(mingland)/index.html" target="_blank">
             <p><red>*</red>첫 개인 프로젝트<red>*</red></p>
             <p>프로젝트명 : 쇼핑몰제작 -&gt; MING land</p>
             <p>프로젝트 구성 : Main, Sub, Detail, Mobile</p>
@@ -743,6 +748,7 @@
             <p>전체 제작 기간 : 2개월</p>
           </a>
         </li>
+        <button onclick="openWindow()" class="mobile_ver">Mobile.ver</button>
       </ul>
       <ul class="melon_box">
         <h2>2. 팀프로젝트 - 멜론 사이트 리뉴얼</h2>
@@ -758,7 +764,7 @@
           </span>
         </li>
         <li class="melon_project_explain explain">
-          <a href="./project_02(melon)/index.html">
+          <a href="./project_02(melon)/index.html" target="_blank" >
             <p><red>*</red>팀 프로젝트<red>*</red></p>
             <p>프로젝트명 : 사이트 리뉴얼 - 멜론 사이트 리뉴얼</p>
             <p>프로젝트 구성 : Main, Sub#2 Mobile / 반응형</p>
@@ -891,7 +897,8 @@
             <img src="./images/MyKey_More.png" alt="my_key_10_img">
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 

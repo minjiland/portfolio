@@ -6,6 +6,7 @@ red {color: red;}
 .e59393 {color: #E59393;}
 
 body {font-family: 'Dongle', sans-serif;}
+button {font-family: 'Dongle', sans-serif;}
 li {list-style: none;}
 a {text-decoration: none; color: black;}
 a:hover {color: white;}
@@ -22,13 +23,25 @@ a:hover {color: white;}
 }
 
 .wrap section h1 {
-  width: 1400px; height: 20vh;
+  width: 1400px; height: 10vh;
   margin: 0 auto;
-  line-height: 20vh;
+  line-height: 10vh;
   font-size: 3rem;
   color: #635146;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrap .intro_page h1 {
+  height: 20vh;
+  line-height: 20vh;
+}
+
+.wrap .profile_page h1 {
+  height: 20vh;
+  line-height: 20vh;
 }
 
 /*-----section*/
@@ -463,11 +476,11 @@ z-index: 9999;}
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  top: 5px;
+  top: 20px;
 }
 
 .wrap .profile_page ul .profile_sub_img span {
-  width: 15vh; height: 15vh;
+  width: 20vh; height: 20vh;
   position: relative;
 }
 
@@ -483,15 +496,17 @@ z-index: 9999;}
 }
 
 .wrap .skill_page ul .web {
-  height: 33vh;
+  height: 28vh;
 }
 
 .wrap .skill_page ul .design {
-  height: 23vh;
+  height: 25vh;
+  float: left;
 }
 
 .wrap .skill_page ul .document {
-  height: 24vh;
+  height: 25vh;
+  float: left
 }
 .wrap .skill_page ul li .web_size {
   height: 28vh;
@@ -511,6 +526,7 @@ z-index: 9999;}
   line-height: 30px;
   color: #635146;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .wrap .skill_page ul li h2:hover {
@@ -717,6 +733,10 @@ z-index: 9999;}
 .wrap .index_page ul {
   height: 40vh;
 }
+.wrap .index_page ul li {
+  height: 30vh;
+  margin-top: 2px;
+}
 
 .wrap .index_page ul li .publishing_img li {
   width: 100%; height: 38vh;
@@ -732,7 +752,7 @@ z-index: 9999;}
 
 .wrap .index_page ul>li>.publishing_title .title {
   font-size: 2.5rem;
-  margin: 100px 0 0 220px;
+  margin: 80px 0 0 220px;
 }
 
 .wrap .index_page ul>li>.publishing_title li h5 {
@@ -764,7 +784,6 @@ z-index: 9999;}
 
 .wrap .index_page ul li .publishing_img {
   position: relative;
-  margin-top: 20px;
 }
 
 .wrap .index_page ul li .design_img li img {
@@ -787,6 +806,9 @@ z-index: 9999;}
 .wrap .index_page ul .uiux_app_img img {
   height: 40vh;
 } 
+
+
+.wrap .index_page ul .design_box {margin-top: 100px;}
 
 /*-----INDEX-----*/
 
@@ -837,8 +859,6 @@ z-index: 9999;}
   padding-left: 30px;
 }
 
-
-
 .wrap .publishing_page ul .explain:hover {
   background-color: black;
   color: white;
@@ -848,6 +868,28 @@ z-index: 9999;}
 .wrap .publishing_page ul .explain p {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.wrap .publishing_page ul .mobile_ver {
+  display: inline-block;
+  width: 150px; height: 50px; border: 1px solid #635146;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.wrap .publishing_page ul .mobile_ver {
+  font-size: 2rem;
+  background-color: #fff;
+}
+
+.wrap .publishing_page ul .mobile_ver:hover {
+  background-color: #000;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*-----shop-----*/
@@ -886,12 +928,13 @@ z-index: 9999;}
   width: 100%; height: auto;
 }
 
+
 /*-----PUBLISHING-----*/
 
 
 .wrap .design_page div h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .event_banner_box {
@@ -924,6 +967,7 @@ z-index: 9999;}
 
 .card_banner_box {
   width: 1400px;
+  margin-top: 50px;
 }
 
 .card_banner_box .card_banner {
@@ -949,18 +993,21 @@ z-index: 9999;}
 
 .card_banner_box .swiper-pagination-bullet {
   background-color: #635146;
-  margin: 0 10px;
 }
 
 /*-----card_banner_swiper-----*/
 
 .wrap .design_uiux_app {
-  width: 1400px; height: 100vh;
+  width: 1600px; height: 100vh;
   margin: 0 auto;
 }
 
+.wrap .design_uiux_app .uiux_box {
+  width: 1600px;
+}
+
 .wrap .design_uiux_app h2 {
-  width: 1400px;
+  width: 1600px;
   margin: 0 auto;
   font-size: 2rem;
   margin-bottom: 50px;
@@ -970,13 +1017,18 @@ z-index: 9999;}
 .wrap .design_uiux_app .uiux {
   height: 81vh;
   padding-top: 5vh;
+  display: flex;
+  align-items: center;
 }
 
-.uiux_box .swiper-pagination-bullet {
-  width: 15px; height: 15px;
-  background-color: #635146;
-  margin: 0px 10px;
+.uiux_box .swiper-button-next {
+  color: #635146;
 }
+.uiux_box .swiper-button-prev {
+  color: #635146;
+}
+
+
 
 /*----uiux_app_design-----*/
 

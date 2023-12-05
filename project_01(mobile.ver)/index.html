@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Mobile</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <title>Mobile</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        function openWindow() {
+          let newWin = window.open('./index.html','_blank','top=500, left=500,width=400,height=600');
+        }
+      </script>
 </head>
-<body>
+<body onload="openWindow()">
 
     <input type="checkbox" id="chk_ham">
 
