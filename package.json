@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "homepage": "https://github.io/parkminji",
+    "name": "parkminji_protfilo"
+  },
+  "script": {
+    "predeploy": "npm run bulid",
+    "deploy": "gh-pages -d bulid"
+  }
+}

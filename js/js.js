@@ -45,7 +45,7 @@ var swiper_card_box = new Swiper(".card_banner_box", {
 
 var swiper_uiux_box = new Swiper(".uiux_box", {
   rewind: true,
-  slidesPerView: 3.5,
+  slidesPerView: 3,
   spaceBetween: 20,
   autoplay: {
     delay: 3000,

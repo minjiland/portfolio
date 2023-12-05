@@ -873,19 +873,32 @@ z-index: 9999;}
 .wrap .publishing_page ul .mobile_ver {
   display: inline-block;
   width: 150px; height: 50px; border: 1px solid #635146;
-  text-align: center;
-  line-height: 55px;
+  text-align: center; line-height: 55px;
   border-radius: 15px;
   margin-left: 50px;
   margin-top: 10px;
-}
-
-.wrap .publishing_page ul .mobile_ver {
   font-size: 2rem;
   background-color: #fff;
 }
 
 .wrap .publishing_page ul .mobile_ver:hover {
+  background-color: #000;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrap .publishing_page ul .pc_ver {
+  display: inline-block;
+  width: 150px; height: 50px; border: 1px solid #635146;
+  text-align: center; line-height: 55px;
+  border-radius: 15px; 
+  margin-left: 5px;
+  background-color: #fff;
+  font-size: 2rem;
+}
+
+.wrap .publishing_page ul .pc_ver:hover {
   background-color: #000;
   font-size: 2rem;
   color: #fff;
@@ -998,20 +1011,33 @@ z-index: 9999;}
 /*-----card_banner_swiper-----*/
 
 .wrap .design_uiux_app {
-  width: 1600px; height: 100vh;
+  width: 100%; height: 100vh;
+  margin: 0 auto;
+}
+
+.wrap .design_uiux_app .uiux_app_box {
+  width: 1600px;
   margin: 0 auto;
 }
 
 .wrap .design_uiux_app .uiux_box {
   width: 1600px;
+  margin: 0 auto;
 }
 
 .wrap .design_uiux_app h2 {
-  width: 1600px;
+  width: 1560px;
   margin: 0 auto;
   font-size: 2rem;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.wrap .design_uiux_app .uiux div {
+  width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 0px;
 }
 
 .wrap .design_uiux_app .uiux {
@@ -1027,6 +1053,7 @@ z-index: 9999;}
 .uiux_box .swiper-button-prev {
   color: #635146;
 }
+
 
 
 
