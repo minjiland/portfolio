@@ -70,7 +70,7 @@ a:hover {color: white;}
   position: absolute;
   left: 50%; margin-left: -350px;
   animation: ani_text 1.5s 1s ease forwards;
-  top: -150px;
+  top: -200px;
 }
 
 .wrap .intro_page ul .content_box {
@@ -79,7 +79,7 @@ a:hover {color: white;}
 }
 
 @keyframes ani_text {
-  0% {top: -150px;}
+  0% {top: -200px;}
   100% {top: 100px;}
 }
 
@@ -232,49 +232,7 @@ a:hover {color: white;}
 .heart_68 {margin-left: 220px; animation-delay: 0.1s;}
 .heart_69 {margin-left: -220px; animation-delay: 1s;}
 .heart_70 {margin-left: -190px; animation-delay: 1.5s;}
-/* 
-.wrap .intro_page ul .big_img span:first-child {
-  position: absolute;
-  left: 60%;;
-  z-index: 12;
-  animation: ani_img_01 1s 1s ease-in-out;
-  opacity: 0;
-}
 
-@keyframes ani_img_01 {
-  0% {bottom: -300px;}
-  50% {bottom: -150px; opacity: 1;}
-  100% {bottom: -150px; opacity: 0;}
-}
-
-.wrap .intro_page ul .big_img span:nth-child(2) {
-  position: absolute;
-  left: 40%; top: -250px;
-  z-index: 12;
-  animation: ani_img_02 1.5s 2s ease-in-out;
-  opacity: 0;
-}
-
-@keyframes ani_img_02 {
-  0% {top: -150px; left: 50%; opacity: 0;}
-  50% {top: 0px; left: 30%; opacity: 1;}
-  100% {top: 0px; left: 30%; opacity: 0;}
-}
-
-.wrap .intro_page ul .big_img span:nth-child(3) {
-  position: absolute;
-  left: 60%; top: -200px;
-  z-index: 12;
-  animation: ani_img_03 1.5s 3.5s ease-in-out;
-  opacity: 0;
-}
-
-@keyframes ani_img_03 {
-  0% {top: 0px; left: 30%; opacity: 0;}
-  50% {top: 150px; left: 60%; opacity: 1;}
-  100% {top: 150px; left: 60%; opacity: 0;}
-  
-} */
 .wrap .intro_page ul .big_img .cute_img {
   width: 148px; height: 212px;
   position: absolute;
@@ -681,11 +639,21 @@ z-index: 9999;}
 
 /*-----SKILL_PAGE-----*/
 
+#chk_individual_project_01 {display: none;}
 #chk_individual_project {display: none;}
 #chk_team_project {display: none;}
 #chk_event_banner {display: none;}
 #chk_card_banner {display: none;}
 #chk_uiux_app {display: none;}
+
+#chk_individual_project_01:checked ~ .wrap .index_page ul li .publishing_img .individual_project_img_01 {opacity: 1;}
+#chk_individual_project_01 ~ .wrap .index_page ul li .publishing_img .individual_project_img_01 {
+  opacity: 0;
+  transition: all 0.5s 0.3s;
+  position: absolute;
+  top: 0;
+}
+
 
 #chk_individual_project:checked ~ .wrap .index_page ul li .publishing_img .individual_project_img {opacity: 1;}
 #chk_individual_project ~ .wrap .index_page ul li .publishing_img .individual_project_img {
@@ -750,6 +718,7 @@ z-index: 9999;}
   width: 100%;
 }
 
+
 .wrap .index_page ul>li>.publishing_title .title {
   font-size: 2.5rem;
   margin: 80px 0 0 220px;
@@ -759,6 +728,8 @@ z-index: 9999;}
   font-size: 1.5rem;
   margin: 30px 0 0 0;
 }
+
+.wrap .index_page ul>li>.publishing_title li .individual_project_01 {margin-left:35px;}
 
 .wrap .index_page ul li ul {
   width: 50%;
@@ -811,6 +782,28 @@ z-index: 9999;}
 .wrap .index_page ul .design_box {margin-top: 100px;}
 
 /*-----INDEX-----*/
+
+
+.wrap .publishing_page .donation_box {
+  margin-top: 150px;
+}
+
+.wrap .publishing_page .donation_box .donation {
+  width: 50%; height: 35vh;
+  float: left;
+  margin-top: 100px;
+}
+
+.wrap .publishing_page .donation_box .donation .donation_imac {
+  width: 100%; height: 38vh;
+  padding-left: 100px;
+}
+
+.wrap .publishing_page ul li .donation_imac img {height: 38vh;}
+
+.wrap .publishing_page .donation_box .explain {margin-top: 130px;}
+
+/*-----donation_box-----*/
 
 .wrap .publishing_page ul {
   width: 1400px; height: 39.5vh;

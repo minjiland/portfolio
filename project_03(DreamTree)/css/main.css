@@ -9,6 +9,8 @@ body {
   position: relative;
 }
 
+#chk_close {display:none}
+
 #chk_close:checked ~ .popup_box {display: none;}
 
 .popup_box {
