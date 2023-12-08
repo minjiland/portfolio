@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamTree</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/main.css">
+  <!--js-->
+  <link rel="stylesheet" href="./js/js.js">
+  <!--GOOGLE_FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--jQuery-->
+  <script src="./js/jquery-3.7.1.min.js.js"></script>
+
+  <script>
+
+    $(function(){
+      let ul = $('.news_box ul')
+      ul.click(function(){
+        ul.removeClass('on')
+        $(this).addClass('on')
+      })
+      $(window).scroll(function(){
+        if($(this).scrollTop()>200) {
+          $('.top_btn').stop().fadeIn('fast')
+        } else {
+          $('.top_btn').stop().fadeOut('fast')
+        }
+      })
+      $('top_btn').click(function(e){
+        e.preventDefault()
+        $(window).scrollTop({top:0, left:0}, 500)
+      })
+
+    });
+
+  </script>
+
+</head>
+<body>
+  
+  <input type="checkbox" id="chk_close">
+
+  <div class="popup_box">
+    <img src="./images/popup_img.png" alt="popup_img">
+    <label for="chk_close">
+      <div class="close">X</div>
+    </label>
+    <div class="popup_btn">
+      <p>아이들의 잠재력 열어주기 ></p>
+    </div>
+  </div>
+  
+<div class="header_box" id="header">
+  <header class="header">
+    <div class="gnb_box">
+      <ul class="gnb">
+        <li class="search"><input type="text" placeholder="검색어를 입력해주세요."><img src="./images/search_icon.png" alt="search_icon_img"></li>
+        <li class="user_icon"><a href="#!">
+          <img src="./images/user_icon.png" alt="user_icon_img">
+        </a></li>
+      </ul>
+    </div>
+
+    <div class="lnb_box">
+      <div class="logo_img">
+        <a href="#"><img src="./images/LOGO_img.png" alt="logo_img"></a>
+      </div>
+      <ul class="lnb">
+        <li><a href="#!">소개</a></li>
+        <li><a href="#!">사업</a></li>
+        <li><a href="#!">후원</a></li>
+        <li><a href="#!">캠페인</a></li>
+        <li><a href="#!">고객센터</a></li>
+      </ul>
+      <div class="donation_btn">
+        <p><a href="#!">후원하기</a></p>
+      </div>
+    </div>
+
+
+  </header>
+  
+  <div class="wrap">
+    <div class="sub_menu">
+      <ul class="introduce_type bold">
+        <li><a href="#!">꿈나무 어린이 재단은</a></li>
+        <li><a href="#!">공지사항</a></li>
+        <li><a href="#!">찾아오시는길</a></li>
+        <li><a href="#!">채용</a></li>
+      </ul>
+      <ul class="business_type">
+        <li>
+          <a href="#!">국내사업</a>
+        </li>
+        <li>
+          <a href="#!">국제사업</a>
+        </li>
+      </ul>
+      <ul class="donation_type">
+        <li>
+          <a href="#!">개인후원</a>
+        </li>
+        <li>
+          <a href="#!">단체후원</a>
+        </li>
+      </ul>
+      <ul class="campaign_type">
+        <li><a href="#!">캠페인</a></li>
+        <li><a href="#!">캠페인 후기</a></li>
+        <li><a href="#!">#Remember Ring</a></li>
+      </ul>
+      <ul class="chat_type">
+        <li><a href="#!">1:1문의</a></li>
+        <li><a href="#!">자주묻는질문</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- Swiper -->
+  <div style="--swiper-navigation-color: #446f53; --swiper-pagination-color: #000" class="swiper mySwiper visual_main_box">
+    <div class="swiper-wrapper visual_main">
+      <div class="swiper-slide">
+        <img src="./images/visual_main_01.png" alt="visual_main_img_01">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/visual_main_02.png" alt="visual_main_img_02">    
+
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/visual_main_03.png" alt="visual_main_img_03">
+
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/visual_main_04.png" alt="visual_main_img_04">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination visual_main_pagination"></div>
+  </div>
+
+  <div class="title_box">
+    <h2>∎ 꿈나무 소식</h2> 
+    <p><a href="#!">자세히 보기 ></a></p>
+  </div>
+
+  <section class="news_box">
+    <ul class="on">
+      <li class="news_text">
+        <p class="class_box">스토리</p>
+        <p class="text">가자지구 위기 관련 피해 및 구호활동 현황
+        </p>
+        <p class="date">2023.12.06</p>
+      </li>
+      <li class="news_img">
+        <img src="./images/dreamtree_happen_img_01.png" alt="happen_img_01">
+      </li>
+    </ul>
+    <ul>
+      <li class="news_text">
+        <p class="class_box">보도자료</p>
+        <p class="text">이병헌, 한지민, 한효주, 박보영, 박해수 등 BH엔터테인먼트 배우 17명과 패션매거진 마리끌레르 '유니세프팀' 캠페인 동참</p>
+        <p class="date">2023.11.22</p>
+      </li>
+      <li class="news_img">
+        <img src="./images/dreamtree_happen_img_02.png" alt="happen_img_02">
+      </li>
+    </ul>
+    <ul>
+      <li class="news_text">
+        <p class="class_box">뉴스</p>
+        <p class="text">가자지구 어린이를 위한 1차 구호물품 도착
+        </p>
+        <p class="date">2023.10.23</p>
+
+      </li>
+      <li class="news_img">
+        <img src="./images/dreamtree_happen_img_03.png" alt="happen_img_03">
+      </li>
+    </ul>
+    <ul>
+      <li class="news_text">
+        <p class="class_box">보도자료</p>
+        <p class="text">아프가니스탄 지진 피해 어린이 돕기 유니세프한국위원회 미화 20만 달러 즉각 지원</p>
+        <p class="date">2023.10.12</p>
+      </li>
+      <li class="news_img">
+        <img src="./images/dreamtree_happen_img_04.png" alt="happen_img_04">
+      </li>
+    </ul>
+    <ul>
+      <li class="news_text">
+        <p class="class_box">성명</p>
+        <p class="text">이스라엘과 팔레스타인 어린이 상황 악화에 대한 캐서린 러셀 유니세프 총재 성명</p>
+        <p class="date">2023.10.10</p>
+      </li>
+      <li class="news_img">
+        <img src="./images/dreamtree_happen_img_05.png" alt="happen_img_05">
+      </li>
+    </ul>
+    <ul>
+      <li class="news_text">
+        <p class="class_box">스토리</p>
+        <p class="text">아동권리와 환경은 무슨 관련이 있을까요?</p>
+        <p class="date">2023.10.05</p>
+      </li>
+      <li class="news_img">
+        <img src="./images/dreamtree_happen_img_06.png" alt="happen_img_06">
+      </li>
+    </ul>
+  </section>
+
+  <div class="title_box">
+    <h2>∎ 진행 중인 캠페인</h2> 
+    <p><a href="#!">자세히 보기 ></a></p>
+  </div>
+
+  <section class="campaign_box">
+    <div class="campaign">
+      <div class="img_box">
+        <img src="./images/campaign_img_01.png" alt="campaign_img_01">
+      </div>
+      <div class="text"></div>
+      <p>아빠 목사에게 필요한 75일의 기적</p>
+    </div>
+
+    <div class="campaign">
+      <div class="img_box">
+        <img src="./images/campaign_img_02.png" alt="campaign_img_02">
+      </div>
+      <div class="text"></div>
+      <p>아들을 지키기 위해 한국에 더 머물러도 될까요?</p>
+    </div>
+
+    <div class="campaign">
+      <div class="img_box">
+        <img src="./images/campaign_img_03.png" alt="campaign_img_03">
+      </div>
+      <div class="text"></div>
+      <p>우리도 그날을 겪는 여자입니다.</p>
+    </div>
+   
+    <div class="campaign">
+      <div class="img_box">
+        <img src="./images/campaign_img_04.png" alt="campaign_img_04">
+      </div>
+      <div class="text"></div>
+      <p>아빠가 널 살릴 수 있도록 조금만 더 견뎌줄래?</p>
+    </div>
+
+  </section>
+
+  <h2 class="donation_text">세상을 함께 할 전세계 어린이들이 각자 꿈을 향해 도전할 수 있도록 작은 보탬이 되어주세요.</h2>
+
+  <div class="swiper mySwiper donation_box" style="--swiper-pagination-color: #445f53">
+    <div class="swiper-wrapper donation">
+      <div class="swiper-slide campaign_donation">
+        <li class="campaign_img">
+          <img src="./images/campaign_donation_img.png" alt="campaign_donation_img">
+        </li>
+        <li class="campaign_text">
+          <h3>캠페인 후원</h3>
+          <p>도움이 필요한 아이들에게 도움을 줍니다!</p>
+        </li>
+      </div>
+      <div class="swiper-slide company_donation">
+        <li class="company_img">
+          <img src="./images/company_donation_img.png" alt="company_donation_img">
+        </li>
+        <li class="company_text">
+          <h3>기업 후원</h3>
+          <p>기업에 맞춰 실천 방안을 제시합니다!</p>
+        </li>
+      </div>
+      <div class="swiper-slide once_donation">
+        <li class="once_img">
+          <img src="./images/once_donation_img.png" alt="once_donation_img">
+        </li>
+        <li class="once_text">
+          <h3>일시 후원</h3>
+          <p>한번이라도 아이들에게 보탬이 되어줄 수 있어요!</p>
+        </li>
+      </div>
+      <div class="swiper-slide some_donation">
+        <li class="some_img">
+          <img src="./images/some_donation_img.png" alt="some_donation_img">
+        </li>
+        <li class="some_text">
+          <h3>소액 후원</h3>
+          <p>후원이 부담스러우시다면 적은 금액부터 시작해보세요!</p>
+        </li>
+      </div>
+      <div class="swiper-slide foreign_donation">
+        <li class="foreign_img">
+          <img src="./images/foreign_donation_img.png" alt="foreign_donation_img">
+        </li>
+        <li class="foreign_text">
+          <h3>해외결연 후원</h3>
+          <p>해외 결연 아동에게도 후원을 하고 있어요!</p>
+        </li>
+      </div>
+      <div class="swiper-slide regular_donation">
+        <li class="regular_img">
+          <img src="./images/regular_donation_img.png" alt="regular_donation_img">
+        </li>
+        <li class="regular_text">
+          <h3>정기후원</h3>
+          <p>후원은 아이들의 꿈과 희망이 되어주는 길입니다!</p>
+        </li>
+      </div>
+    </div>
+    <div class="swiper-pagination donation_pagination"></div>
+  </div>
+
+  <div class="video_box">
+    <ul class="video">
+      <li>
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/AlzCJlViXL4" title="뾰루지 짰다가 희귀병 걸린 17살 엄마…혹에 가려 실명 위기 / 연합뉴스 (Yonhapnews)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </li>
+    </ul>
+    <ul class="video_text">
+      <li><p>희귀병 치료지원 캠페인</p></li>
+      <li><h4>희귀병에 걸린 17살 엄마</h4></li>
+      <li><p>혹에 가려 실명 위기
+        <br><br>아내를 병원에 보낼 수 있게 도와주세요. 
+        <br>한살 아들과 식구들의 생계를 유지할 정도밖에 <br> 벌지 못해 아내의 치료비를 마련할 수가 없어요..
+        </p>
+      </li>
+      <li class="donation_btn">후원하기</li>
+      <li class="donation_btn">자세히 보기 ></li>
+    </ul>
+  </div>
+
+  <div class="advice">
+    <ul class="advice_box">
+      <li class="number">
+        <p>후원문의 & 상담 : 1234-1234 (평일 09:00 ~ 18:00 / 주말 및 공휴일 휴무)</p>
+      </li>
+      <li>
+        <a href="#!" class="receipt"><p>기부금 영수증</p></a>
+        <a href="#!"><p>꿈나무 소식</p></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer_box">
+    <footer class="footer">
+
+      <div class="sns_box">
+        <ul class="sns">
+          <li><a href="#!">
+            <img src="./images/instagram_icon.png" alt="instagram_img">
+          </a></li>
+          <li><a href="#!">
+            <img src="./images/facebook_icon.png" alt="facebook_img">
+          </a></li>
+          <li><a href="#!">
+            <img src="./images/youtube_icon.png" alt="youtube_img">
+          </a></li>
+          <li><a href="#!">
+            <img src="./images/twitter_icon.png" alt="twitter_img">
+          </a></li>
+          <li><a href="#!">
+            <img src="./images/blog_icon.png" alt="blog_img">
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="simbol_img">
+          <img src="./images/tree_icon.png" alt="simbol_img">
+      </div>
+      
+      <ul class="footer_menu">
+        <li><a href="#!">인재채용</a></li>
+        <li><a href="#!">이용약관</a></li>
+        <li><a href="#!">개인정보처리방침</a></li>
+        <li><a href="#!">이메일무단수집거부</a></li>
+        <li><a href="#!">오시는길</a></li>
+      </ul>
+      <ul class="info">
+        <li>사단법인 꿈나무 어린이 재단</li>
+        <li>사업자등록번호 123-12-12345</li>
+        <li>회장 박민지</li>
+        <li>대표이사 김시윤</li>
+        <br>
+        <li>(12345) 서울시 강남구 청담동 어린이재단빌딩</li>
+        <li>대표전화 1234-1234</li>
+        <li>팩스 02-123-1234</li>
+        <div class="copyright">
+          <p>Copyrightⓒ박민지.All Right Reserved</p>
+        </div>
+      </ul>
+     
+    </footer>
+  </div>
+
+  <div class="top_btn_box">
+    <a href="#header" class="top_btn">
+      <span class="top">
+        <img src="./images/top_btn_img.png" alt="top_btn_img">
+        <img src="./images/top_btn_hover_img.png" alt="top_btn_hover_img">
+      </span>
+    </a>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+     var swiper_visual_main = new Swiper(".visual_main_box", {
+      lazy: true,
+      rewind: true,
+      autoplay: true,
+      pagination: {
+        el: ".visual_main_pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+   </script>
+
+  <script>
+    var swiper_donation = new Swiper(".donation_box", {
+      slidesPerView: 3,
+      rewind:true,
+      loop: true,
+      centeredSlides: true,
+      pagination: {
+        el: ".donation_pagination",
+        clickable: true,
+      },
+    });
+  </script>
+ 
+
+
+  
+</body>
+</html>
