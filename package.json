@@ -3,9 +3,5 @@
     "gh-pages": "^6.1.0",
     "homepage": "https://minjiland.github.io/portfolio",
     "name": "parkminji_protfilo"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b build"
   }
 }
