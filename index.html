@@ -312,15 +312,6 @@
           </li>
         
           <li class="big_img">
-            <!-- <span>
-            <img src="./images/옴팡이.png" alt="character_img">
-            </span>
-            <span>
-            <img src="./images/옴팡이_01_img.png" alt="character_img">
-            </span>
-            <span>
-            <img src="./images/옴팡이_02.png" alt="character_img">
-            </span> -->
             <span class="cute_img">
               <label for="chk_cute">
                 <img src="./images/옴팡이_img.png" alt="character_img">
@@ -695,15 +686,17 @@
             </li>
           </ul>
           <ul class="publishing_img">
-            <li class="individual_project_img_01 pc_img">
-              <img src="./images/index_donation_imac.png" alt="개인프로젝트_img_01">
-            </li>
-            <li class="individual_project_img pc_img">
-              <img src="./images/index_publishing_imac.png" alt="개인프로젝트_img">
-            </li>
-            <li class="team_project_img pc_img">
-              <img src="./images/index_melon_iMac.png" alt="팀프로젝트_img">
-            </li>
+            <a href="#publishing_page">
+              <li class="individual_project_img_01 pc_img">
+                  <img src="./images/index_donation_imac.png" alt="개인프로젝트_img_01">
+              </li>
+              <li class="individual_project_img pc_img">
+                  <img src="./images/index_publishing_imac.png" alt="개인프로젝트_img">
+              </li>
+              <li class="team_project_img pc_img">
+                <img src="./images/index_melon_iMac.png" alt="팀프로젝트_img">
+              </li>
+            </a>
           </ul>
         </li>
         <li class="design_box">
@@ -757,7 +750,7 @@
       </ul>
     </section>
 
-    <section onload="openWindow()" class="publishing_page">
+    <section onload="openWindow()" class="publishing_page" id="publishing_page_02">
       <h1>PUBLISHING</h1>
       <ul class="shop_box">
         <h2>2. 개인프로젝트 - 의류쇼핑몰 제작</h2>
@@ -773,13 +766,14 @@
           <a href="./project_01(mingland)/index.html" target="_blank">
             <p><red>*</red>첫 개인 프로젝트<red>*</red></p>
             <p>프로젝트명 : 쇼핑몰제작 - MING land</p>
-            <p>프로젝트 구성 : Main, Sub, Detail, Mobile</p>
+            <p>프로젝트 구성 : Main, Sub, Detail, Mobile+Tablet(Main Page)</p>
             <p>사용 툴 : HTML5, CSS3, Photoshop, Illustrator</p>
-            <p>전체 제작 기간 : 2개월</p>
+            <p>전체 제작 기간 : 3개월</p>
           </a>
         </li>
-        <button onclick="openWindow()" class="mobile_ver">Mobile.ver</button>
-        <a href="./project_01(mingland)/index.html" class="pc_ver" target="_blank">PC.ver</a>
+          <a href="./images/mingland_plan.pdf" target="_blank" class="plan_box">기획서</a>
+          <button onclick="openWindow()" class="mobile_ver">Mobile&Tablet.ver</button>
+          <a href="./project_01(mingland)/index.html" class="pc_ver" target="_blank">PC.ver</a>
       </ul>
       <ul class="melon_box">
         <h2>3. 팀프로젝트 - 멜론 사이트 리뉴얼</h2>
@@ -798,13 +792,16 @@
           <a href="./project_02(melon)/index.html" target="_blank" >
             <p><red>*</red>팀 프로젝트<red>*</red></p>
             <p>프로젝트명 : 사이트 리뉴얼 - 멜론 사이트 리뉴얼</p>
-            <p>프로젝트 구성 : Main, Sub#2 Mobile / 반응형</p>
+            <p>프로젝트 구성 : Main, Sub#2 / Mobile&Tablet&PC / 반응형</p>
             <p>사용 툴 : HTML5, CSS3, jQuery - plugin(swiper, slick) Photoshop, Illustrator</p>
-            <p>전체 제작 기간 : 1개월</p>
+            <p>전체 제작 기간 : 2개월</p>
           </a>
         </li>
+        <a href="./images/melon_plan.pdf" target="_blank" class="plan_box">기획서</a>
+        <a href="./project_02(melon)/index.html" class="pc_ver" target="_blank">MELON</a>
       </ul>
     </section>
+
     <section class="design_page" id="design_page">
       <h1>DESIGN</h1>
       <!-- Swiper -->

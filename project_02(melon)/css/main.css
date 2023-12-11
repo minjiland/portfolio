@@ -13,6 +13,9 @@ body, html {
 green {color: #21df3a;}
 
 /*-----melon-----*/
+#chk_popup {display: none;}
+
+.popup_box {display: none;}
 
 #chk_lnb {display: none;}
 
@@ -1283,7 +1286,7 @@ margin-top: 2.5px;
   position: absolute;
   right: 0; bottom: 0;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 9997;
 }
 
 .post-wrapper .post{
@@ -1500,7 +1503,37 @@ margin-left: 25px;
 body, html {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
+
+#chk_popup:checked ~ .popup_box {display: none;}
+
+.popup_box {
+  display: block;
+  width: 100%; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 9998;
+}
+
+.popup_box li i:hover {cursor: pointer;}
+
+.popup_box .popup_img {
+  position: absolute;
+  top: 300px; left: 50%; 
+  margin-left: -230px;
+  z-index: 9998;
+  background-color: #151515;
+}
+
+.popup_box li i {
+  position: absolute;
+  top: 320px; left: 50%; margin-left: 180px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 2rem;
+}
+
 
 .header_box {
   width: 1422px; height: auto;
@@ -1528,7 +1561,7 @@ body, html {
 .header_box .header .logo:hover span:last-child {display: block;}
 
 .header_box .header .header_menu_box .search_box .search_menu {
-  width: 60px; height: 60px;
+  width: 60px; height: 55px;
   overflow: hidden;
   margin-top: 5px;
   float: right;
