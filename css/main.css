@@ -1154,7 +1154,7 @@ z-index: 9999;}
 .btn_quick_menu {
   position: fixed;
   width: 70px; height: 345px;
-  bottom: 300px; right: 30px;
+  bottom: 250px; right: 30px;
   border: 1px dotted #635146;
   border-radius: 10px;
   z-index: 9999;
