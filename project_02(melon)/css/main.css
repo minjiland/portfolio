@@ -579,26 +579,26 @@ green {color: #21df3a;}
 
 
 .center .slick-center li {
-opacity: 1;
-transform: scale(1.1);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .center li {
-opacity: 0.5;
-transition: all 300ms ease;
+  opacity: 0.5;
+  transition: all 300ms ease;
 }
 
 .center div li img {
-width: 100%; height: auto;
-border-radius: 50%;
+  width: 100%; height: auto;
+  border-radius: 50%;
 }
 
 .center div li p {
-height: 40px;
-  color: white;
-font-size: 18px;
-font-weight: bold;
-margin-top: 5px;
+  height: 40px;
+    color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 

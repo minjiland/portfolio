@@ -936,20 +936,18 @@ hr {
 }
 
 .footer .info .time ul li {
-  width: 80px; height: 35px;
+  width: 80px; height: 40px;
   text-align: center; line-height: 40px;
   float: left;
   background-color: rgb(250, 250, 207);
   transition: all 0.3s 0.1s;
+  box-sizing: border-box;
 }
 
 .footer .info .time ul li:hover {
   border-radius: 10px;
-  background-color: white;
   transition: all 0.3s 0.1s;
-  border: 3px solid rgb(250, 250, 207);
   box-sizing: border-box;
-  line-height: 30px;
 }
 
 .footer .menu {
