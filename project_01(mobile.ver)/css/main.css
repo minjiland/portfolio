@@ -306,20 +306,18 @@ h3 {
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding:2px
+    padding:2px;
+    border-right:1px solid #999;
+    line-height: 5px;
+    padding: 0px 5px;
 }
 
+.sns li:last-child {border-right: 0;}
 .sns li:first-child i {
     color: pink;
 }
 
 .sns li:nth-child(2) i {
-    color: green;
-}
-
-.sns li:nth-child(3) i {
     color: red;
 }
 
@@ -347,7 +345,7 @@ h1 {
 }
 
 .footer .info {
-    width: 290px;
+    width: 267px;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -358,7 +356,6 @@ h1 {
     padding: 0 6px;
     line-height: 6px;
     font-size: 12px;
-
 }
 
 .footer .info li:last-child {
