@@ -60,8 +60,9 @@
         })
 
         $(profileMenu).click(function(){
+          let prev = $(this).prev().offset().top
           $('html, body').stop().animate({
-            scrollTop: 1168
+            scrollTop: prev
           }, 800)
         })
         $(skillMenu).click(function(){
@@ -178,14 +179,14 @@
         <ul class="portfolio">
           <h2><a href="#">PORTFOLIO</a></h2>
         </ul>
-        <ul class="main_menu">
+        <!-- <ul class="main_menu">
           <li class="intro"><a href="#profile_page" class="profile_menu">PROFILE</a></li>
           <li class="skill"><a href="#skill_page" class="skill_menu">SKILL</a></li>
           <li class="index"><a href="#index_page" class="index_menu">INDEX</a></li>
           <li class="publishing"><a href="#publishing_page" class="publishing_menu">PUBLISHING</a></li>
           <li class="design"><a href="#design_page" class="design_menu">DESIGN</a></li>
           <li class="contact"><a href="#contact_page" class="contact_menu">CONTACT</a></li>
-        </ul> 
+        </ul>  -->
       </div>
       <div class="introduce">
         <hr><p class="introduce_text">Let me introduce myself</p><hr>
