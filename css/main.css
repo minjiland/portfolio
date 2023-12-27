@@ -29,11 +29,14 @@ a {text-decoration: none; color: black;}
   top: 0; right: 0;
   z-index: 9999;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  display: none;
 }
 
 .wrap section .main_menu_box .portfolio {
   width: 15%; height: 50px;
-  float:left;
+  float: left;
 }
 
 .wrap section .main_menu_box ul h2 {
@@ -50,11 +53,10 @@ a {text-decoration: none; color: black;}
   line-height: 70px;
 }
 
-
 .wrap section .main_menu {
   width: 85%; height: 0px;
   display: flex;
-  float: right;
+  z-index: 9999;
 }
 
 .wrap section .main_menu li {
@@ -62,6 +64,7 @@ a {text-decoration: none; color: black;}
   text-align: center; line-height: 50px;
   position: relative;
 }
+
 
 .wrap section .main_menu li:hover {
   border-radius: 30px;
@@ -83,22 +86,10 @@ a {text-decoration: none; color: black;}
   font-weight: bold;
 }
 
-.wrap section .main_menu li .profile_menu,
-.wrap section .main_menu li .skill_menu,
-.wrap section .main_menu li .index_menu,
-.wrap section .main_menu li .publishing_menu,
-.wrap section .main_menu li .design_menu,
-.wrap section .main_menu li .contact_menu {
-  display: block;
-  width: 100%; height: 50px;
-  position: absolute;
-  transition: all 0.3s 0.1s;
-  font-size: 1.5rem;
-  top: 10px;
-  background-color: #eee;
-  border-radius: 20px;
+.bg_color {
   font-weight: bold;
 }
+
 .wrap .intro_page {position: relative;}
 
 .wrap .intro_page .intro_text {
@@ -484,11 +475,6 @@ a {text-decoration: none; color: black;}
 
 .wrap .skill_page ul .web {margin-top: 100px;}
 
-.wrap .skill_page ul h2 {
-  font-weight: bold;
-  font-family: 'Noto Serif KR', serif;
-}
-
 .wrap .skill_page .web_box>li {
   width: 100%; height: 40vh;
   float: left;
@@ -737,13 +723,6 @@ a {text-decoration: none; color: black;}
 
 /*-----chk-----*/
 
-.wrap .index_page .main_menu_box .portfolio {height: 50px; margin: 0;}
-
-.wrap .index_page .main_menu_box .main_menu {
-  height: 0px; margin: 0;
-}
-.wrap .index_page .main_menu_box ul li {height: 50px;}
-
 .wrap .index_page ul {
   height: 40vh;
   margin-top: 50px;
@@ -842,16 +821,9 @@ a {text-decoration: none; color: black;}
 /*-----INDEX-----*/
 
 
-.wrap .publishing_page .main_menu_box .main_menu {
-  width: 85%; height: 50px;
-}
-
 .wrap .publishing_page .donation_box {
   height: 70vh;
   margin-top: 20vh;
-}
-
-.wrap .publishing_page .donation_box h1 {
 }
 
 .wrap .publishing_page .donation_box .donation {
@@ -1159,17 +1131,6 @@ transition: all 0.2s;
   display: flex;
   align-items: center;
 }
-/* 
-.uiux_box .swiper-button-next {
-  color: #000;
-  --swiper-navigation-top-offset: 35vh;
-}
-.uiux_box .swiper-button-prev {
-  color: #000;
-  --swiper-navigation-top-offset: 35vh;
-} */
-
-
 
 
 /*----uiux_app_design-----*/
@@ -1234,9 +1195,6 @@ transition: all 0.2s;
   font-size: 1.5rem;
   float: left;
   padding-left: 100px;
-}
-
-.wrap .contact_page ul .thanks {
 }
 
 .wrap .contact_page {

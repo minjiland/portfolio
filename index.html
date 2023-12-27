@@ -35,7 +35,62 @@
             scrollTop: next
           }, 1000)
         }
-      })
+
+      });
+
+      //MENU
+      $(function(){
+        
+        let mainMenu = $('.wrap section .main_menu_box')
+        let profileMenu = $('.wrap section .main_menu_box .main_menu li .profile_menu')
+        let skillMenu = $('.wrap section .main_menu_box .main_menu li .skill_menu')
+        let indexMenu = $('.wrap section .main_menu_box .main_menu li .index_menu')
+        let publishingMenu = $('.wrap section .main_menu_box .main_menu li .publishing_menu')
+        let designMenu = $('.wrap section .main_menu_box .main_menu li .design_menu')
+        let contactMenu = $('.wrap section .main_menu_box .main_menu li .contact_menu')
+        
+        $(window).scroll(function(){
+
+          if($(this).scrollTop()>=50) {
+            $(mainMenu).stop().fadeIn('fast')
+           } else {
+            $(mainMenu).stop().fadeOut('fast')
+          }
+
+        })
+
+        $(profileMenu).click(function(){
+          $('html, body').stop().animate({
+            scrollTop: 1168
+          }, 800)
+        })
+        $(skillMenu).click(function(){
+          $('html, body').stop().animate({
+            scrollTop: 2336
+          }, 800)
+        })
+        $(indexMenu).click(function(){
+          $('html, body').stop().animate({
+            scrollTop: 3504
+          }, 800)
+        })
+        $(publishingMenu).click(function(){
+          $('html, body').stop().animate({
+            scrollTop: 4672
+          }, 800)
+        })
+        $(designMenu).click(function(){
+          $('html, body').stop().animate({
+            scrollTop: 7008
+          }, 800)
+        })
+        $(contactMenu).click(function(){
+          $('html, body').stop().animate({
+            scrollTop: 9344
+          }, 800)
+        })
+
+      });
 
     //color_box
       $(document).ready(function(){
@@ -45,10 +100,8 @@
         $("#click").click(function(){ 
         $('#click').css({"background-color":"#f00", "color":"#fff","cursor":"inherit"});
         return false;
-        });
-      });
-
-
+        })
+      })
 
     });
 
@@ -127,11 +180,11 @@
         </ul>
         <ul class="main_menu">
           <li class="intro"><a href="#profile_page" class="profile_menu">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
+          <li class="skill"><a href="#skill_page" class="skill_menu">SKILL</a></li>
+          <li class="index"><a href="#index_page" class="index_menu">INDEX</a></li>
+          <li class="publishing"><a href="#publishing_page" class="publishing_menu">PUBLISHING</a></li>
+          <li class="design"><a href="#design_page" class="design_menu">DESIGN</a></li>
+          <li class="contact"><a href="#contact_page" class="contact_menu">CONTACT</a></li>
         </ul> 
       </div>
       <div class="introduce">
@@ -167,19 +220,6 @@
     </section>
 
     <section class="skill_page" id="skill_page">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page" class="skill_menu">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
-        </ul> 
-      </div>
       <ul class="web_box">
         <li class="web">
           <h2>웹개발</h2>
@@ -501,19 +541,6 @@
     </section>
 
     <section class="index_page" id="index_page">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page" class="index_menu">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
-        </ul> 
-      </div>
       <ul>
         <li class="publishing_box">
           <ul class="publishing_title">
@@ -581,19 +608,6 @@
     </section>
 
     <section class="publishing_page" id="publishing_page">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page" class="publishing_menu">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
-        </ul> 
-      </div>
       <ul class="donation_box">
         <h1>1. 개인프로젝트 - 후원 단체 사이트 제작</h1>
         <li class="donation">
@@ -614,19 +628,6 @@
     </section>
 
     <section onload="openWindow()" class="publishing_page" id="publishing_page_02">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page" class="publishing_menu">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
-        </ul> 
-      </div>
       <ul class="shop_box">
         <h1>2. 개인프로젝트 - 의류쇼핑몰 제작</h1>
         <li class="shop">
@@ -674,19 +675,6 @@
     </section>
 
     <section class="design_page" id="design_page">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page" class="design_menu">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
-        </ul> 
-      </div>
       <!-- Swiper -->
       <div class="swiper mySwiper event_banner_box">
         <h1>1. 이벤트 배너 디자인</h1>
@@ -774,19 +762,6 @@
     </section>
 
     <section class="design_uiux_app">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page" class="design_menu">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page">CONTACT</a></li>
-        </ul> 
-      </div>
       <div class="uiux_app_box">
       <div class="swiper mySwiper uiux_box">
         <h2 class="uiux_text">3. UI&UX 앱 디자인 <red>*</red>Figma사용<red>*</red></h2>
@@ -830,19 +805,6 @@
 
 
     <section class="contact_page" id="contact_page">
-      <div class="main_menu_box">
-        <ul class="portfolio">
-          <h2><a href="#">PORTFOLIO</a></h2>
-        </ul>
-        <ul class="main_menu">
-          <li class="intro"><a href="#profile_page">PROFILE</a></li>
-          <li class="skill"><a href="#skill_page">SKILL</a></li>
-          <li class="index"><a href="#index_page">INDEX</a></li>
-          <li class="publishing"><a href="#publishing_page">PUBLISHING</a></li>
-          <li class="design"><a href="#design_page">DESIGN</a></li>
-          <li class="contact"><a href="#contact_page" class="contact_menu">CONTACT</a></li>
-        </ul> 
-      </div>
       <ul>
         <li class="contact_determination">
           <h5>초심을 잃지 않는 디자이너가 되겠습니다.</h5>
