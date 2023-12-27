@@ -57,37 +57,42 @@
             $(mainMenu).stop().fadeOut('fast')
           }
 
+          // if($(this).scrollTop() == $('profile_page').offset().top) {
+          //   (profileMenu).addClass('bg_color')
+          // } else (
+          //   (profileMenu).removeClass('bg_color')
+          // )
+
         })
 
         $(profileMenu).click(function(){
-          let prev = $(this).prev().offset().top
           $('html, body').stop().animate({
-            scrollTop: prev
+            scrollTop: $('.profile_page').offset().top
           }, 800)
         })
         $(skillMenu).click(function(){
           $('html, body').stop().animate({
-            scrollTop: 2336
+            scrollTop: $('.skill_page').offset().top
           }, 800)
         })
         $(indexMenu).click(function(){
           $('html, body').stop().animate({
-            scrollTop: 3504
+            scrollTop: $('.index_page').offset().top
           }, 800)
         })
         $(publishingMenu).click(function(){
           $('html, body').stop().animate({
-            scrollTop: 4672
+            scrollTop: $('.publishing_page').offset().top
           }, 800)
         })
         $(designMenu).click(function(){
           $('html, body').stop().animate({
-            scrollTop: 7008
+            scrollTop: $('.design_page').offset().top
           }, 800)
         })
         $(contactMenu).click(function(){
           $('html, body').stop().animate({
-            scrollTop: 9344
+            scrollTop: $('.contact_page').offset().top
           }, 800)
         })
 
@@ -179,14 +184,14 @@
         <ul class="portfolio">
           <h2><a href="#">PORTFOLIO</a></h2>
         </ul>
-        <!-- <ul class="main_menu">
+        <ul class="main_menu">
           <li class="intro"><a href="#profile_page" class="profile_menu">PROFILE</a></li>
           <li class="skill"><a href="#skill_page" class="skill_menu">SKILL</a></li>
           <li class="index"><a href="#index_page" class="index_menu">INDEX</a></li>
           <li class="publishing"><a href="#publishing_page" class="publishing_menu">PUBLISHING</a></li>
           <li class="design"><a href="#design_page" class="design_menu">DESIGN</a></li>
           <li class="contact"><a href="#contact_page" class="contact_menu">CONTACT</a></li>
-        </ul>  -->
+        </ul> 
       </div>
       <div class="introduce">
         <hr><p class="introduce_text">Let me introduce myself</p><hr>
